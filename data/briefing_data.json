@@ -1,0 +1,829 @@
+{
+  "briefing_date": "2026년 07월 09일",
+  "market_summary": "전일(7월 8일) 국내 증시는 삼성전자의 깜짝 실적 발표에도 불구하고 반도체 피크아웃 우려와 단일종목 레버리지 ETF발 변동성 확대로 코스피가 급락하며 7,200선에서 마감했고, 코스닥은 800선이 무너지며 780선에서 거래를 마쳤다. 외국인은 전전일(7월 7일) 기준 14거래일 만에 매수로 전환하며 삼성전기·SK하이닉스 등을 순매수했으나, 매도 사이드카가 발동되는 등 수급 혼란이 극심했다. 원·달러 환율은 40일 만에 1,400원대를 회복하는 듯했으나 중동 리스크 재부각으로 다시 1,500원대로 되돌아갔다.\n\n주요 이슈로는 트럼프 미 대통령이 이란 재공격을 시사하면서 미국이 이틀 연속 이란 공습을 단행했고, 이로 인해 브렌트유가 5.2% 급등하며 78달러를 기록해 인플레이션 재점화 우려가 확산됐다. 국내에서는 KB국민은행이 오는 10일부터 주택담보대출 최대 한도를 기존 6억원에서 3억원으로 절반 삭감하는 조치를 전격 발표하며 부동산 시장과 실수요자에게 충격을 줬다. IMF는 한국의 올해 성장률 전망치를 3개월 만에 1.9%에서 2.6%로 대폭 상향 조정했으며, 이는 주요 30개국 중 상승폭이 가장 큰 수치로 AI 하드웨어 수출 상위 4개국 반열에 오른 결과로 평가됐다. 한편 한국은행 금융통화위원회가 오는 16일 기준금리를 결정할 예정인 가운데, 전문가들은 환율·물가·집값 불안을 이유로 금리 인상 가능성을 높게 보고 있다.\n\n긍정 요인으로는 삼성전자가 분기 영업이익 세계 1위를 기록하는 역대급 실적을 달성했고, SK하이닉스의 미국 ADR 상장이 임박해 기업가치 재평가 기대감이 형성되고 있으며, LG전자가 2Q26 영업이익 1조 5,788억원으로 컨센서스를 47% 상회하는 어닝 서프라이즈를 기록했다. 부정 요인으로는 반도체 피크아웃 논란이 팽팽하게 맞서고 있고, 단일종목 2배 레버리지 ETF의 등장으로 변동성이 구조적으로 증폭되는 새로운 리스크가 부각됐다. 고유가·고환율 기조 장기화로 밥상물가가 급등하고 있으며, 영업이익으로 이자도 감당하지 못하는 한계 중소기업 비중이 2024년 기준 8.8%로 증가하는 등 실물경기 피로감도 누적되고 있다.\n\n단기적으로 시장은 반도체 실적 시즌(SK하이닉스 2분기 발표 임박)과 7월 16일 한국은행 금통위 기준금리 결정이 최대 분수령이 될 전망이다. 중동 긴장 고조에 따른 국제유가 추가 급등 여부와 KB국민은행 주담대 한도 축소에 따른 타 은행 동반 규제 확산 여부도 핵심 관전 포인트다. 반도체 대형주의 경우 고점 논란 속에서도 AI 수요 구조적 성장 내러티브가 유효하다는 시각과 단기 차익실현 압력이 팽팽하게 맞서고 있어, 실적 확인 후 대응하는 신중한 전략이 요구된다.",
+  "hot_sectors": [
+    {
+      "name": "반도체",
+      "reason": "실적·ADR 모멘텀"
+    },
+    {
+      "name": "금융",
+      "reason": "NIM 개선·주주환원"
+    },
+    {
+      "name": "방산·건설",
+      "reason": "중동 리스크 수혜"
+    },
+    {
+      "name": "AI 인프라",
+      "reason": "전력·데이터센터 수요"
+    },
+    {
+      "name": "가전·소비재",
+      "reason": "깜짝 실적 서프라이즈"
+    }
+  ],
+  "market_leaders": [
+    {
+      "rank": 1,
+      "name": "삼성전자",
+      "code": "005930",
+      "signal": "긍정",
+      "summary": "삼성전자는 분기 영업이익 세계 1위를 기록하는 역대급 실적을 달성했으나, 실적 발표 직후 주가는 오히려 급락하는 이례적인 흐름이 나타났다. 단일종목 2배 레버리지 ETF 도입에 따른 수급 왜곡과 반도체 피크아웃 우려가 복합적으로 작용한 결과로 분석된다.",
+      "catalyst": "2Q26 영업이익이 시장 컨센서스를 크게 상회하는 어닝 서프라이즈를 기록하며 펀더멘털 훼손은 없는 것으로 확인됐다. IMF가 한국 성장률을 AI 하드웨어 수출 강국으로 평가하며 대폭 상향 조정해 반도체 수출 모멘텀이 지속되고 있다.",
+      "risk": "단일종목 레버리지 ETF발 변동성 확대와 반도체 피크아웃 논란이 단기 주가 상단을 제한하고 있으며, 국제유가 급등에 따른 인플레이션 재점화 우려도 부담 요인이다.",
+      "channel_mentions": [
+        {
+          "source_type": "경제방송",
+          "source_name": "이데일리TV",
+          "content": "삼성전자 역대급 실적에도 주가 폭락한 이유를 단일종목 레버리지 ETF와 수급 왜곡으로 분석하며, 반도체 지금 매수 가능 여부를 논의했다.",
+          "url": "https://www.youtube.com/watch?v=RHBSyTXaHoA"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "이데일리TV",
+          "content": "삼성전자 깜짝 실적에도 반도체 하락의 숨은 배경으로 AI 반도체 피크아웃 논란과 메모리 업황 가격 외 변수를 지목했다.",
+          "url": "https://www.youtube.com/watch?v=RZfLPlUZ0pM"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "TomatoTV",
+          "content": "분기 영업이익 세계 1등을 기록한 삼성전자를 지금 던지는 것은 과매도 반응이며, 젠슨 황이 예고한 AI 폭발적 고성장 사이클을 타야 한다는 시각을 제시했다.",
+          "url": "https://www.youtube.com/watch?v=WvgMNrF1hZM"
+        },
+        {
+          "source_type": "뉴스",
+          "source_name": "매일경제",
+          "content": "국민의힘 박수영 의원은 삼성전자·SK하이닉스 2배 ETF발 증시 변동성을 지적하며 국정조사를 요구했다.",
+          "url": "https://www.mk.co.kr/news/economy/12094090"
+        }
+      ],
+      "channel_counts": {
+        "뉴스": 2,
+        "경제방송": 21,
+        "유튜브": 33,
+        "애널리스트": 1
+      },
+      "total_count": 57,
+      "weighted_score": 105.19,
+      "overlap_count": 3,
+      "reasons": [],
+      "price": 273750,
+      "change_pct": -1.35,
+      "price_label": "현재가"
+    },
+    {
+      "rank": 2,
+      "name": "SK하이닉스",
+      "code": "000660",
+      "signal": "긍정",
+      "summary": "SK하이닉스는 미국 ADR 상장이 임박하며 기업가치 재평가 기대감이 고조되고 있고, 2분기 역대급 어닝 서프라이즈 가능성이 제기되고 있다. 전일 외국인의 순매수 상위 종목에 오르며 수급 개선 신호가 나타났다.",
+      "catalyst": "미국 ADR 상장으로 글로벌 투자자 접근성이 확대되며 수급 구조적 개선이 기대된다. HBM 중심의 AI 반도체 수요 지속과 2Q26 실적 발표 임박이 단기 모멘텀으로 작용할 전망이다.",
+      "risk": "반도체 피크아웃 논란이 팽팽하게 맞서고 있으며, 고유가에 따른 글로벌 경기 둔화 우려가 메모리 수요 전망의 불확실성을 높이고 있다.",
+      "channel_mentions": [
+        {
+          "source_type": "경제방송",
+          "source_name": "이데일리TV",
+          "content": "ADR 상장을 앞둔 SK하이닉스의 기업가치 재평가 조건과 메모리 업황 진단, 가격 외 무엇을 봐야 하는지를 집중 분석했다.",
+          "url": "https://www.youtube.com/watch?v=RZfLPlUZ0pM"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "이데일리TV",
+          "content": "마켓나우 3부에서 SK하이닉스를 종목 레이더로 집중 조명하며 ADR 상장 호재와 역대급 어닝 서프라이즈 가능성을 분석했다.",
+          "url": "https://www.youtube.com/watch?v=Sxf4gqC6F8k"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "TomatoTV",
+          "content": "SK하이닉스 2분기 실적 발표 임박 시점에 역대급 어닝 서프라이즈와 미국 ADR 상장 호재가 불러올 수급 변화를 집중 논의했다.",
+          "url": "https://www.youtube.com/watch?v=2V2wGQkC1GM"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "TomatoTV",
+          "content": "삼전·닉스 반등 흐름 속 메모리 기대감이 유효하다는 분석과 함께 전일 외국인 순매수 상위 종목으로 하이닉스가 포함됐다.",
+          "url": "https://www.youtube.com/watch?v=5EPL531n39k"
+        }
+      ],
+      "channel_counts": {
+        "뉴스": 3,
+        "경제방송": 21,
+        "유튜브": 27,
+        "애널리스트": 1
+      },
+      "total_count": 52,
+      "weighted_score": 100.17,
+      "overlap_count": 3,
+      "reasons": [],
+      "price": 2155000,
+      "change_pct": 3.81,
+      "price_label": "현재가"
+    }
+  ],
+  "stocks": [
+    {
+      "rank": 1,
+      "name": "LG전자",
+      "code": "051910",
+      "signal": "긍정",
+      "summary": "LG전자는 2Q26 매출 23조 8,297억원, 영업이익 1조 5,788억원으로 시장 컨센서스를 47% 웃도는 어닝 서프라이즈를 달성했다. 가전 사업부를 필두로 한 견조한 실적과 함께 AI 데이터센터향 칠러 공급 확대, 에어케어 중심 로보틱스 포트폴리오 등 신사업 모멘텀이 하반기 추가 성장 동력으로 평가받고 있다.",
+      "catalyst": "하나증권·유안타증권·대신증권 등 3개사가 동시에 리포트를 발표하며 하반기 신사업 모멘텀을 긍정적으로 평가했다. DB증권은 목표주가를 24만 5천원으로 69% 대폭 상향 조정하는 등 증권사들의 줄상향이 이어지고 있다.",
+      "risk": "현재가 253,000원 기준 전일 대비 -0.78% 하락 중으로 고평가 부담과 시장 전반의 변동성 확대가 단기 주가 상단을 제한할 수 있다.",
+      "channel_mentions": [
+        {
+          "source_type": "애널리스트",
+          "source_name": "하나증권/유안타증권/대신증권",
+          "content": "LG전자 2Q26 영업이익 1조 5,788억원으로 호실적 달성, 하반기 신사업 모멘텀 기대를 근거로 3개 증권사 동시 긍정 평가.",
+          "url": "https://finance.naver.com/research/company_read.naver?nid=93992&page=2"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "이데일리TV",
+          "content": "LG전자 깜짝 실적 발표 후 목표가 줄상향 흐름을 조명하며, DB증권의 목표주가 69% 상향과 AI 데이터센터향 칠러 공급 확대를 주목했다.",
+          "url": "https://www.youtube.com/watch?v=oHwF-RbDtqE"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "이데일리TV",
+          "content": "실적 장세 본격화 구간에서 LG전자를 조정 구간 내 주목할 섹터 핵심 종목으로 제시했다.",
+          "url": "https://www.youtube.com/watch?v=-DxKL169L0A"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "TomatoTV",
+          "content": "젠슨 황이 예고한 AI 고성장 사이클 수혜주로 LG전자를 거론하며, 가전·로보틱스·데이터센터 포트폴리오 다각화를 긍정 평가했다.",
+          "url": "https://www.youtube.com/watch?v=WvgMNrF1hZM"
+        }
+      ],
+      "channel_counts": {
+        "경제방송": 7,
+        "애널리스트": 1
+      },
+      "total_count": 8,
+      "weighted_score": 20.24,
+      "overlap_count": 2,
+      "reasons": [],
+      "price": 253000,
+      "change_pct": -0.78,
+      "price_label": "현재가"
+    },
+    {
+      "rank": 2,
+      "name": "현대차",
+      "code": "005380",
+      "signal": "중립",
+      "summary": "현대차는 환율 악화와 글로벌 판매 감소로 2Q26 실적이 시장 기대치를 하회할 전망이어서 단기 펀더멘털 부담이 있다. 전일 현재가 439,500원으로 -4.97% 급락하며 노사협상 결렬과 오는 13~15일 부분 파업 돌입 소식이 추가적인 하방 압력으로 작용하고 있다.",
+      "catalyst": "하반기 한·중 전기차 경쟁 구도에서 현대차의 전기차 라인업 경쟁력이 재평가될 수 있으며, 키움증권은 내러티브보다 펀더멘털 회복 가능성에 주목할 것을 권고했다. 환율 안정화 시 수익성 회복 속도가 빠를 수 있다는 점도 중장기 긍정 요인이다.",
+      "risk": "노사 협상 결렬에 따른 부분 파업(13~15일) 돌입으로 생산 차질 우려가 현실화됐으며, 2Q26 실적 부진이 확인될 경우 추가 주가 하락 압력이 발생할 수 있다.",
+      "channel_mentions": [
+        {
+          "source_type": "애널리스트",
+          "source_name": "키움증권",
+          "content": "환율 악화와 글로벌 판매 감소로 2Q26 실적이 시장 기대치를 하회할 전망이나, 내러티브보다는 펀더멘털 회복 가능성에 주목할 것을 권고했다.",
+          "url": "https://finance.naver.com/research/company_read.naver?nid=93958&page=3"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "TomatoTV",
+          "content": "현대차 노사협상 결렬로 13~15일 부분 파업 돌입이 확정됐으며, 임금 인상·성과금 이견이 지속되고 있다.",
+          "url": "https://www.youtube.com/watch?v=yPEObYpRBNw"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "TomatoTV",
+          "content": "자동차 산업 상반기 결산 및 하반기 전망에서 한·중 전기차 경쟁 재점화와 현대차의 하반기 대응 전략을 분석했다.",
+          "url": "https://www.youtube.com/watch?v=ojjD4GH7_yE"
+        },
+        {
+          "source_type": "유튜브",
+          "source_name": "815머니톡",
+          "content": "현대차증권 노근창 센터장이 삼성전자 실적 분석과 함께 자동차 섹터 2분기 실적 기대 여부를 점검했다.",
+          "url": "https://www.youtube.com/watch?v=pzDs7fzjBw0"
+        }
+      ],
+      "channel_counts": {
+        "경제방송": 3,
+        "유튜브": 1,
+        "애널리스트": 1
+      },
+      "total_count": 5,
+      "weighted_score": 10.76,
+      "overlap_count": 3,
+      "reasons": [],
+      "price": 439500,
+      "change_pct": -4.97,
+      "price_label": "현재가"
+    },
+    {
+      "rank": 3,
+      "name": "삼성전기",
+      "code": "009150",
+      "signal": "긍정",
+      "summary": "삼성전기는 2Q26 매출 3.24조원, 영업이익 4,179억원(OPM 12.9%)으로 시장 기대치 부합이 예상되며, 유안타증권과 대신증권이 '가장 완벽한 청사진'으로 평가했다. 전일 외국인 순매수 상위 종목에 포함되며 수급 개선 신호가 나타났다.",
+      "catalyst": "유안타증권·대신증권 2개사가 동시에 긍정적 리포트를 발표하며 2Q26 실적 기대치 부합을 확인했다. 반도체 변동성 장세에서 TomatoTV가 탑픽으로 제시하며 관심이 집중됐다.",
+      "risk": "반도체 피크아웃 논란이 지속될 경우 전방 산업 수요 우려가 삼성전기 수익성에도 영향을 미칠 수 있다.",
+      "channel_mentions": [
+        {
+          "source_type": "애널리스트",
+          "source_name": "유안타증권/대신증권",
+          "content": "2Q26 매출 3.24조원, 영업이익 4,179억원으로 시장 기대치 부합 예상, '가장 완벽한 청사진'으로 평가하며 동시 긍정 리포트 발표.",
+          "url": "https://finance.naver.com/research/company_read.naver?nid=93983&page=2"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "TomatoTV",
+          "content": "반도체 변동성 장세에서 삼성전기를 주목 탑픽으로 제시하며 목표가와 손절가를 함께 언급했다.",
+          "url": "https://www.youtube.com/watch?v=zeSm570_8ss"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "TomatoTV",
+          "content": "전일 외국인이 14거래일 만에 매수 전환하며 삼성전기를 순매수 상위 종목으로 편입했다.",
+          "url": "https://www.youtube.com/watch?v=2V2wGQkC1GM"
+        },
+        {
+          "source_type": "유튜브",
+          "source_name": "삼프로TV",
+          "content": "삼성전기가 전일 대비 0.23% 강보합으로 시장 시작 시점에 안정적 흐름을 유지했다고 언급했다.",
+          "url": "https://www.youtube.com/watch?v=JSdciqKzWnw&t=01:24"
+        }
+      ],
+      "channel_counts": {
+        "경제방송": 2,
+        "유튜브": 1,
+        "애널리스트": 1
+      },
+      "total_count": 4,
+      "weighted_score": 9.34,
+      "overlap_count": 3,
+      "reasons": [],
+      "price": 1453000,
+      "change_pct": -1.76,
+      "price_label": "현재가"
+    },
+    {
+      "rank": 4,
+      "name": "KB금융",
+      "code": "105560",
+      "signal": "긍정",
+      "summary": "KB금융은 미래에셋증권이 목표주가를 216,000원으로 상향하며 투자의견 매수를 유지, 이번 분기에도 기대되는 주주환원 정책이 핵심 투자 포인트로 제시됐다. 현재가 173,400원으로 전일 대비 +1.40% 상승하며 시장 불안 속에서도 금융주 강세 흐름이 나타났다.",
+      "catalyst": "미래에셋증권의 목표주가 상향과 주주환원 기대감이 지속적인 매수 유인으로 작용하고 있다. 고금리 환경 지속과 NIM 개선이 은행 이익 체력 강화로 이어지는 구조적 수혜 국면이다.",
+      "risk": "KB국민은행의 주담대 한도 반토막(6억→3억원) 조치가 향후 대출 성장세 둔화로 이어질 수 있으며, 당국의 추가 대출 규제 압박이 수익성 제한 요인으로 작용할 수 있다.",
+      "channel_mentions": [
+        {
+          "source_type": "애널리스트",
+          "source_name": "미래에셋증권",
+          "content": "KB금융 목표주가를 216,000원으로 상향하며 투자의견 매수 유지, 이번 분기에도 기대되는 주주환원을 핵심 투자 포인트로 제시했다.",
+          "url": "https://finance.naver.com/research/company_read.naver?nid=93923&page=4"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "이데일리TV",
+          "content": "코스피 조정 시작 여부 분석 방송에서 KB금융을 금융 소비 트렌드 수혜주로 함께 언급했다.",
+          "url": "https://www.youtube.com/watch?v=NeJDe-QPVUc"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "TomatoTV",
+          "content": "야인시대 리턴즈에서 KB금융을 종목 진단 대상으로 포함시켜 현재 투자 매력도를 점검했다.",
+          "url": "https://www.youtube.com/watch?v=RO0igSo_K8M"
+        }
+      ],
+      "channel_counts": {
+        "경제방송": 2,
+        "애널리스트": 1
+      },
+      "total_count": 3,
+      "weighted_score": 7.01,
+      "overlap_count": 2,
+      "reasons": [],
+      "price": 173400,
+      "change_pct": 1.4,
+      "price_label": "현재가"
+    },
+    {
+      "rank": 5,
+      "name": "한화에어로스페이스",
+      "code": "012450",
+      "signal": "긍정",
+      "summary": "한화에어로스페이스는 대신증권이 목표주가 1,720,000원으로 상향하며 Top-Pick으로 유지했으나, 현재가 954,000원으로 전일 대비 -8.36% 급락하며 단기 차익실현 압력이 극심하게 나타났다. 중동 분쟁 재점화로 방산 수혜 기대감이 있으나 단기 고점 논란이 병존하고 있다.",
+      "catalyst": "대신증권이 '2Q26 Preview: 조용한 지금이 기회'를 제목으로 Top-Pick 유지 리포트를 발표했다. 미국-이란 군사 충돌 재점화로 방산·건설 중동 메가프로젝트 수혜 기대감이 높아지고 있다.",
+      "risk": "전일 -8.36% 급락으로 단기 차익실현 압력이 크며, TomatoTV는 하단 지지선 95만원 이탈 시 손절 또는 추가 매수 여부에 대한 명확한 판단이 필요하다고 경고했다.",
+      "channel_mentions": [
+        {
+          "source_type": "애널리스트",
+          "source_name": "대신증권",
+          "content": "목표주가 1,720,000원으로 상향하며 '2Q26 Preview: 조용한 지금이 기회'를 제목으로 한화에어로스페이스를 Top-Pick으로 유지했다.",
+          "url": "https://finance.naver.com/research/company_read.naver?nid=94016&page=1"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "TomatoTV",
+          "content": "하단 지지선 95만원이 단기 트레이딩 진입 타점이나, 유가 상승에도 단기 차익 실현 우위가 나타나 저점 이탈 시 명확한 판단이 필요하다고 분석했다.",
+          "url": "https://www.youtube.com/watch?v=KLw8On5WpSM&t=12:54"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "TomatoTV",
+          "content": "중동 휴전 균열에 따른 유가 급등 수혜 섹터로 한화에어로스페이스를 대한항공, HMM과 함께 지목했다.",
+          "url": "https://www.youtube.com/watch?v=wbC1NH3gZR8"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "이데일리TV",
+          "content": "실적 장세 본격화 구간에서 중동 리스크 재점화로 건설·방산주 투자심리가 위축됐으나 섹터 내 희비가 교차한다고 분석했다.",
+          "url": "https://www.youtube.com/watch?v=-DxKL169L0A"
+        }
+      ],
+      "channel_counts": {
+        "경제방송": 3,
+        "애널리스트": 1
+      },
+      "total_count": 4,
+      "weighted_score": 6.85,
+      "overlap_count": 2,
+      "reasons": [],
+      "price": 954000,
+      "change_pct": -8.36,
+      "price_label": "현재가"
+    },
+    {
+      "rank": 6,
+      "name": "LG에너지솔루션",
+      "code": "373220",
+      "signal": "긍정",
+      "summary": "LG에너지솔루션은 2Q26 영업이익 1,133억원으로 전분기 대비 흑자전환에 성공했으며, ESS 및 테슬라 매출 호조가 실적 개선을 이끌었다. 하나증권·유진투자증권·신한투자증권·IBK투자증권 등 4개 증권사가 동시에 하반기 회복세 지속을 전망했다.",
+      "catalyst": "4개 증권사가 동시에 긍정 리포트를 발표하며 하반기 회복세 지속을 전망했다. ESS 수요 급증과 테슬라향 배터리 공급 호조가 구조적 성장 동력으로 작용하고 있다.",
+      "risk": "기대치 대비 실적 규모가 크지 않아 흑자전환 자체는 긍정적이나 성장 속도에 대한 시장의 눈높이를 충족하기까지 시간이 필요할 수 있다.",
+      "channel_mentions": [
+        {
+          "source_type": "애널리스트",
+          "source_name": "하나증권/유진투자증권/신한투자증권/IBK투자증권",
+          "content": "LG에너지솔루션 2Q26 영업이익 1,133억원 흑자전환, ESS 및 테슬라 매출 호조로 하반기 회복세 지속을 4개사 동시 전망했다.",
+          "url": "https://finance.naver.com/research/company_read.naver?nid=93990&page=2"
+        },
+        {
+          "source_type": "유튜브",
+          "source_name": "머니인사이드",
+          "content": "LG에너지솔루션이 최근 실적 발표에서 기대에 못 미쳤지만 흑자 전환에 성공하며 다시 돈을 벌기 시작했다고 평가했다.",
+          "url": "https://www.youtube.com/watch?v=rbAvOn0SJcA&t=13:10"
+        }
+      ],
+      "channel_counts": {
+        "유튜브": 1,
+        "애널리스트": 1
+      },
+      "total_count": 2,
+      "weighted_score": 6.47,
+      "overlap_count": 2,
+      "reasons": [],
+      "price": 315000,
+      "change_pct": -0.16,
+      "price_label": "현재가"
+    },
+    {
+      "rank": 7,
+      "name": "하나금융지주",
+      "code": "086790",
+      "signal": "긍정",
+      "summary": "하나금융지주는 2분기에도 NIM 5bp 상승 등으로 그룹 순이자이익이 QoQ 3.2%, YoY 16.7% 증가할 전망으로, 하나증권은 은행 중 가장 높은 NIM 개선세를 긍정 평가했다. 현재가 122,400원으로 전일 대비 +0.08% 소폭 강보합을 유지하며 시장 불안 속 방어적 흐름을 보이고 있다.",
+      "catalyst": "하나증권 리포트에서 1분기에 이어 2분기에도 은행 중 가장 높은 NIM 개선세가 지속될 것으로 전망됐다. 고금리 환경과 이자이익 성장이 안정적인 실적 기반을 제공한다.",
+      "risk": "금융당국의 대출 규제 강화가 은행 전반의 여신 성장세를 제한할 수 있으며, 금리 인하 전환 시 NIM 하락 압력이 발생할 수 있다.",
+      "channel_mentions": [
+        {
+          "source_type": "애널리스트",
+          "source_name": "하나증권",
+          "content": "2분기에도 NIM 5bp 상승으로 그룹 순이자이익 QoQ 3.2%, YoY 16.7% 증가 전망, 은행 중 가장 높은 NIM 개선세를 긍정 평가했다.",
+          "url": "https://finance.naver.com/research/company_read.naver?nid=93938&page=4"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "이데일리TV",
+          "content": "코스피 조정 시작 여부 분석 방송에서 하나금융지주를 금융 수혜주 관련 종목으로 함께 언급했다.",
+          "url": "https://www.youtube.com/watch?v=NeJDe-QPVUc"
+        }
+      ],
+      "channel_counts": {
+        "경제방송": 1,
+        "애널리스트": 1
+      },
+      "total_count": 2,
+      "weighted_score": 3.64,
+      "overlap_count": 2,
+      "reasons": [],
+      "price": 122400,
+      "change_pct": 0.08,
+      "price_label": "현재가"
+    },
+    {
+      "rank": 8,
+      "name": "HD현대",
+      "code": "329180",
+      "signal": "중립",
+      "summary": "HD현대는 전일 현재가 498,500원으로 -3.58% 하락하며 시장 전반의 조정 흐름에 동반 약세를 보였다. 조선·방산 섹터 내 기자재주 투자 매력 점검이 이뤄지고 있으나 뚜렷한 단기 모멘텀은 확인되지 않고 있다.",
+      "catalyst": "815머니톡에서 조선 분야 분기 실적 기대 여부와 조선 기자재주 투자 가능성을 점검하며 중장기 성장 잠재력을 논의했다. 중동 리스크 재점화로 에너지 운반 관련 해양 플랜트 수요 증가 가능성이 있다.",
+      "risk": "시장 전반의 변동성 확대 국면에서 단기 주가 하락 압력이 지속되고 있으며, 국제유가 급등이 운영 비용 상승으로 이어질 수 있다.",
+      "channel_mentions": [
+        {
+          "source_type": "경제방송",
+          "source_name": "이데일리TV",
+          "content": "HD현대일렉트릭을 포함한 전력기기·조선 관련 섹터를 실적 장세 주목 종목군으로 함께 거론했다.",
+          "url": "https://www.youtube.com/watch?v=NeJDe-QPVUc"
+        },
+        {
+          "source_type": "유튜브",
+          "source_name": "815머니톡",
+          "content": "조선 분기 실적 기대 여부와 HD현대중공업 등 조선 기자재주 투자 가능성을 점검하며 하반기 성장성을 논의했다.",
+          "url": "https://www.youtube.com/watch?v=sDbI9shGKnA"
+        }
+      ],
+      "channel_counts": {
+        "경제방송": 1,
+        "유튜브": 1
+      },
+      "total_count": 2,
+      "weighted_score": 3.45,
+      "overlap_count": 2,
+      "reasons": [],
+      "price": 498500,
+      "change_pct": -3.58,
+      "price_label": "현재가"
+    }
+  ],
+  "hidden_picks": [
+    {
+      "rank": 1,
+      "name": "LG디스플레이",
+      "code": "034220",
+      "signal": "중립",
+      "summary": "LG디스플레이는 전일 1.01% 상승 흐름을 유지하며 LG전자 호실적 발표 효과의 계열사 수혜를 받은 것으로 분석된다. LG그룹 계열사 전반의 실적 모멘텀 확산 여부가 주목받고 있다.",
+      "catalyst": "LG전자 깜짝 실적 발표 이후 LG그룹 계열사 전반으로 투자 관심이 확산되며 LG디스플레이도 동반 상승 흐름이 나타났다. 금융 소비 트렌드 수혜주 분석 방송에서 LG그룹 종목들이 함께 거론됐다.",
+      "risk": "디스플레이 산업 자체의 수급 개선 여부가 불확실하며, LG전자 호재의 계열사 낙수 효과가 제한적일 수 있다.",
+      "channel_type": "경제방송",
+      "channel_name": "이데일리TV",
+      "reasons": [
+        {
+          "source_type": "경제방송",
+          "source_name": "이데일리TV",
+          "detail": "LG그룹 계열사 및 증권주 수혜 분석 방송에서 LG디스플레이를 LG전자·LG이노텍·LG씨엔에스 등과 함께 언급했다.",
+          "source_url": "https://www.youtube.com/watch?v=oHwF-RbDtqE"
+        },
+        {
+          "source_type": "경제방송",
+          "source_name": "이데일리TV",
+          "detail": "전일 LG디스플레이가 1.01% 상승 흐름을 유지했다고 구체적으로 언급하며 LG그룹 실적 모멘텀 확산에 주목했다.",
+          "source_url": "https://www.youtube.com/watch?v=oHwF-RbDtqE&t=01:56"
+        }
+      ],
+      "weighted_score": 4.96,
+      "price": 10510,
+      "change_pct": -6.49,
+      "price_label": "현재가"
+    },
+    {
+      "rank": 2,
+      "name": "SK텔레콤",
+      "code": "017670",
+      "signal": "긍정",
+      "summary": "SK텔레콤의 2Q26 영업이익은 전년 대비 60.1% 증가한 5,414억원으로 예상되며, 유안타증권은 '리부트 완료'를 제목으로 긍정적인 회복세를 평가했다. 통신주 특유의 방어적 성격과 함께 실적 회복 모멘텀이 더해지며 시장 변동성 구간에서 관심이 높아지고 있다.",
+      "catalyst": "전년 대비 60.1% 영업이익 증가라는 강한 실적 회복세가 확인됐다. 유안타증권이 '리부트 완료'로 평가하며 본격적인 실적 개선 사이클 진입을 선언했다.",
+      "risk": "통신 사업의 성장 한계와 5G 투자 비용 부담이 지속될 수 있으며, 보안 이슈 등 외부 변수가 잠재적 리스크로 남아 있다.",
+      "channel_type": "애널리스트",
+      "channel_name": "유안타증권",
+      "reasons": [
+        {
+          "source_type": "애널리스트",
+          "source_name": "유안타증권",
+          "detail": "SK텔레콤 2Q26 영업이익 전년 대비 60.1% 증가한 5,414억원 예상, '리부트 완료'로 평가하며 실적 회복 사이클 진입을 긍정적으로 분석했다.",
+          "source_url": "https://finance.naver.com/research/company_read.naver?nid=94025&page=1"
+        }
+      ],
+      "weighted_score": 3.75,
+      "price": 86200,
+      "change_pct": 2.62,
+      "price_label": "현재가"
+    }
+  ],
+  "ai_strategy": "■ 핵심 시나리오\n현재 시장은 반도체 대형주의 역대급 실적 달성과 단일종목 레버리지 ETF발 수급 왜곡이 충돌하는 이례적 국면이다. SK하이닉스 2분기 실적 발표와 7월 16일 한국은행 금통위 기준금리 결정이 단기 방향성의 핵심 분수령이 될 전망으로, 실적 확인 후 대형주 중심의 선별적 대응이 유효하다. IMF의 한국 성장률 대폭 상향과 AI 하드웨어 수출 강국 평가는 중장기 펀더멘털 훼손이 없음을 시사한다.\n\n■ 섹터 로테이션\n반도체·AI 인프라 중심의 주도 섹터 지위는 유지되나 단기 변동성 확대로 경기방어 소비재(화장품·엔터)와 금융주(NIM 개선 수혜)로의 부분적 로테이션 흐름이 포착되고 있다. 중동 리스크 재점화로 방산·에너지 섹터가 단기 수혜를 받고 있으나 유가 추가 급등 시 인플레이션 압력으로 전환될 수 있어 과도한 집중은 경계가 필요하다.\n\n■ 오늘의 주목 포인트\n• SK하이닉스 2분기 실적 발표: 역대급 어닝 서프라이즈 여부와 HBM 수요 전망 확인\n• 7월 16일 한국은행 금통위 기준금리 결정: 전문가 다수가 인상 가능성을 높게 보고 있어 결과에 따른 시장 충격 대비 필요\n• KB국민은행 주담대 한도 축소(10일 시행) 후 타 은행 동반 규제 확산 여부\n• 미국-이란 군사 긴장 추이 및 브렌트유 가격 동향: 78달러 돌파 후 추가 상승 여부\n\n■ 리스크 시나리오\n• [보통] 반도체 피크아웃 확인 → SK하이닉스 2분기 실적에서 HBM 수요 둔화 신호가 확인될 경우 반도체 비중을 축소하고 금융·소비재 등 실적 개선 방어주로 이동하는 전략 고려\n• [높음] 한국은행 기준금리 인상 단행 → 금리 인상 시 성장주 밸류에이션 압박이 심화될 수 있어 NIM 수혜 은행주(하나금융지주·KB금융)를 헤지 포지션으로 활용하고, 고밸류 성장주 비중 조절 필요\n• [보통] 중동 분쟁 확전 및 유가 급등 지속 → 브렌트유 80달러 이상 돌파 시 방산·에너지 수송(국적 유조선) 관련주 단기 수혜를 활용하되, 인플레이션 재점화에 따른 글로벌 긴축 우려 확산에 대비한 리스크 헤지 병행\n• [높음] 레버리지 ETF발 수급 왜곡 지속 → 단일종목 2배 레버리지 ETF의 리밸런싱 수급이 장 후반 변동성을 증폭시키는 새로운 구조적 리스크로 인식하고, 장중 급등락에 감정적 대응을 자제하며 실적 기반 종목 중심의 중장기 포지션 유지\n\n■ 애널리스트 종합 시각\n애널리스트 리포트 종합적으로는 긍정 기조가 우세하다. LG전자(3개사 동시 긍정, 목표주가 대폭 상향), LG에너지솔루션(4개사 동시 긍정, 하반기 회복세 지속), 삼성전기(2개사 동시 긍정, 2Q26 기대치 부합), KB금융(미래에셋 목표주가 상향), 하나금융지주(NIM 개선 지속), 한화에어로스페이스(대신증권 Top-Pick 유지) 등 주요 종목에 걸쳐 매수 의견이 유지되고 있다. 다만 현대차의 경우 키움증권이 2Q26 실적 기대치 하회 전망을 제시해 단기 펀더멘털 부담을 지적했으며, SK텔레콤은 유안타증권이 60.1% 영업이익 증가 예상으로 회복 사이클 진입을 선언했다.",
+  "market_data": {
+    "kospi": {
+      "value": 7242.93994140625,
+      "change_pct": -0.05,
+      "direction": "down",
+      "is_premarket": false
+    },
+    "kosdaq": {
+      "value": 789.3099975585938,
+      "change_pct": 0.55,
+      "direction": "up",
+      "is_premarket": false
+    },
+    "nasdaq": {
+      "value": 25870.650390625,
+      "change_pct": 0.2,
+      "direction": "up",
+      "is_premarket": false
+    },
+    "sp500": {
+      "value": 7482.7099609375,
+      "change_pct": -0.28,
+      "direction": "down",
+      "is_premarket": false
+    },
+    "dow": {
+      "value": 52348.390625,
+      "change_pct": -1.09,
+      "direction": "down",
+      "is_premarket": false
+    },
+    "usd_krw": {
+      "value": 1502.1400146484375,
+      "change_pct": -1.17,
+      "direction": "down",
+      "is_premarket": false
+    }
+  },
+  "brokerage_reports": {
+    "simultaneous": [
+      {
+        "stock_name": "에이피알",
+        "brokers": [
+          "교보증권",
+          "한화투자증권",
+          "유안타증권",
+          "SK증권",
+          "신한투자증권"
+        ],
+        "title": "벌써 매출액 7,500억원, 속도 미쳤는데요?",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "에이피알의 2Q26 매출액은 7,521억원(YoY 130%)으로 미국·B2B 중심의 고성장이 두드러진다.",
+        "date": "26.07.09",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "NC",
+        "brokers": [
+          "하나증권",
+          "한화투자증권"
+        ],
+        "title": "현재도, 미래도 밝다",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "NC의 2분기 매출액과 영업이익이 전년 대비 각각 +79.0%, +792.0% 급증할 전망이다.",
+        "date": "26.07.09",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "LG유플러스",
+        "brokers": [
+          "하나증권",
+          "유안타증권",
+          "SK증권"
+        ],
+        "title": "2Q 프리뷰 - 역대급 실적 달성 전망, 주가 너..",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "LG유플러스에 대해 목표주가 20,000원을 유지하며 Top Pick으로 추천한다.",
+        "date": "26.07.09",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "달바글로벌",
+        "brokers": [
+          "유안타증권",
+          "유진투자증권"
+        ],
+        "title": "북미·유럽 중심의 성장 지속",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "2026년 2분기 매출 1,800억원(+40% YoY), 영업이익 410억원(+40% YoY)이 예상되며 북미·유럽 중심의 해외 성장이 두드러진다.",
+        "date": "26.07.09",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "KT",
+        "brokers": [
+          "유안타증권",
+          "SK증권",
+          "신한투자증권"
+        ],
+        "title": "단단한 본질과 확실한 성장",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "2Q26 매출은 6.9조원, 영업이익은 5,770억원으로 시장 기대치를 하회할 전망이다.",
+        "date": "26.07.09",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "LG이노텍",
+        "brokers": [
+          "대신증권",
+          "유안타증권",
+          "DS투자증권"
+        ],
+        "title": "2Q 호실적 예상, 2H도 기판, 광학 좋다!",
+        "opinion": "매수",
+        "target_price": "",
+        "ai_summary": "LG이노텍 2Q 실적은 영업이익 2,447억원으로 컨센서스를 43.2% 상회하는 호실적이 예상된다.",
+        "date": "26.07.09",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "한화오션",
+        "brokers": [
+          "대신증권",
+          "신한투자증권"
+        ],
+        "title": "과도한 디스카운트는 오히려 기회",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "목표주가 139,000원은 2028F EPS 7,000원에 PER 19.8배를 적용해 산출되었다.",
+        "date": "26.07.09",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "이마트",
+        "brokers": [
+          "IBK투자증권",
+          "한화투자증권"
+        ],
+        "title": "일시적 이벤트에 가려진 펀더멘탈 개선",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "이마트 2분기 영업이익은 전년동기 대비 +211.6% 급증하며 펀더멘탈 개선이 기대된다.",
+        "date": "26.07.09",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "NHN",
+        "brokers": [
+          "한화투자증권",
+          "교보증권"
+        ],
+        "title": "추정치 및 목표주가 재차 상향",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "NHN 2Q26 매출액 7,068억 원, 영업이익 430억 원으로 개선이 예상된다.",
+        "date": "26.07.08",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "휴젤",
+        "brokers": [
+          "교보증권",
+          "신한투자증권",
+          "키움증권"
+        ],
+        "title": "2Q26 Preview; 외형 성장 확대 중",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "2Q26 매출액 1,259억원(YoY +14.1%), 영업이익 507억원(YoY -10.7%)으로 외형 성장세 지속이 전망된다.",
+        "date": "26.07.08",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "삼성에스디에스",
+        "brokers": [
+          "교보증권",
+          "한화투자증권",
+          "하나증권"
+        ],
+        "title": "선명한 중장기 목표 제시",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "2Q26 매출 3.67조원(YoY +4.6%), 영업이익 2,350억원(+2.1%) 예상되며 클라우드 부문이 YoY +15.7% 성장 전망.",
+        "date": "26.07.08",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "LG전자",
+        "brokers": [
+          "하나증권",
+          "유안타증권",
+          "대신증권"
+        ],
+        "title": "하반기 신사업 모멘텀 기대",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "LG전자는 2Q26 매출 23조 8,297억원, 영업이익 1조 5,788억원으로 호실적을 달성했다.",
+        "date": "26.07.08",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "삼성전자",
+        "brokers": [
+          "하나증권",
+          "대신증권",
+          "유진투자증권",
+          "iM증권",
+          "IBK투자증권",
+          "키움증권",
+          "미래에셋증권",
+          "한화투자증권"
+        ],
+        "title": "메모리 이익 체력 확인. 실적 상향 여력 충분",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "삼성전자 2Q26 영업이익 89.4조원으로 메모리 중심 실적이 컨센서스를 크게 상회했다.",
+        "date": "26.07.08",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "LG에너지솔루션",
+        "brokers": [
+          "하나증권",
+          "유진투자증권",
+          "신한투자증권",
+          "IBK투자증권"
+        ],
+        "title": "하반기 회복세 지속 전망",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "LG에너지솔루션 2Q26 영업이익은 1,133억원으로 전분기 대비 흑자전환했으며, ESS 및 테슬라 매출 호조로 실적이 개선되었다.",
+        "date": "26.07.08",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "삼성전기",
+        "brokers": [
+          "유안타증권",
+          "대신증권"
+        ],
+        "title": "2Q26 Pre: 가장 완벽한 청사진",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "2Q26 매출 3.24조원, 영업이익 4,179억원(OPM 12.9%)으로 시장 기대치 부합이 예상된다.",
+        "date": "26.07.08",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "감성코퍼레이션",
+        "brokers": [
+          "유안타증권",
+          "IBK투자증권"
+        ],
+        "title": "국가별 맞춤 매장 확대 전략",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "중국 내 파트너사를 통한 브랜드 확장과 2H26 티셔츠·자라 판매 개시로 26년 성장성 기여가 기대된다.",
+        "date": "26.07.08",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "코스맥스",
+        "brokers": [
+          "SK증권",
+          "교보증권"
+        ],
+        "title": "변곡점을 통과했다",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "코스맥스 2Q26 매출 7,490억원(+20.1% YoY), 영업이익 690억원(+13.4%) 전망.",
+        "date": "26.07.08",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "GS피앤엘",
+        "brokers": [
+          "키움증권",
+          "IBK투자증권"
+        ],
+        "title": "예상보다 빠른 웨스틴 회복, 컨센 상회 전망",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "웨스틴 OCC 80% 달성과 ADR 상승으로 2분기 실적이 컨센서스를 상회할 전망이다.",
+        "date": "26.07.08",
+        "report_day": "today"
+      }
+    ],
+    "new_coverage": [
+      {
+        "stock_name": "SK스퀘어",
+        "brokers": [
+          "유안타증권"
+        ],
+        "title": "[NDR 후기] 명확한 방향성 확인",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "SK스퀘어에 대해 BUY 의견과 목표주가 2,100,000원을 유지한다.",
+        "date": "26.07.07",
+        "report_day": "today"
+      },
+      {
+        "stock_name": "도우인시스",
+        "brokers": [
+          "SK증권"
+        ],
+        "title": "글로벌 UTG 선도 공급사, 관건은 신규 매출처",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "도우인시스는 글로벌 UTG 선도 공급사로, 매출의 97%가 UTG에 집중되어 있다.",
+        "date": "26.07.07",
+        "report_day": "today"
+      }
+    ],
+    "single_significant": []
+  }
+}
