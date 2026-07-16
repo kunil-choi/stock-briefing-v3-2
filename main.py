@@ -13,6 +13,9 @@ stock-briefing-v3의 main.py 로직을 그대로 복사했다.
 산출물:
 - data/briefing_data.json : brokerage_reports가 포함된 버전
   (stock-briefing-step2가 raw.githubusercontent.com으로 직접 소비)
+- docs/index.html         : GitHub Pages 프리뷰 페이지(사람이 눈으로 데이터를
+  확인하기 위한 용도). stock-briefing-v3의 공개 브리핑 사이트를 대체하는 게
+  아니라 별도 프리뷰다 — v3는 현재 자동 실행이 중단된 상태로 그대로 유지된다.
 
 완료 후 GH_TOKEN으로 stock-briefing-step2(report_update.yml)를
 workflow_dispatch로 트리거한다.
@@ -20,6 +23,7 @@ workflow_dispatch로 트리거한다.
 import os
 import json
 import time
+import shutil
 import urllib.request
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -38,6 +42,29 @@ V3_1_RAW_URL_TMPL = (
 )
 UPSTREAM_MAX_WAIT_MIN = 15
 UPSTREAM_RETRY_SEC    = 5 * 60
+
+# 이 레포도 v3-1과 동일하게 "정식 V3 공개 사이트"가 아니라 report_update(step2)
+# 영상 제작에 쓰인 최종(리포트 포함) 데이터를 확인하기 위한 프리뷰다. 공유 모듈
+# (analyzer/html_generator.py는 v3/v3-1과 바이트 단위로 동일하게 유지)은 건드리지
+# 않고 반환된 HTML 문자열에만 배너/타이틀을 얹어 구분한다.
+_PREVIEW_LABEL = "V3-2 프리뷰 · 증권사 리포트 포함 최종 스냅샷 (step2 영상 제작용 데이터)"
+
+
+def _label_preview_html(html: str) -> str:
+    html = html.replace(
+        "<title>AI 주식 브리핑",
+        "<title>[V3-2 프리뷰] AI 주식 브리핑",
+        1,
+    )
+    banner = (
+        '<div style="background:#111827;color:#fbbf24;text-align:center;'
+        'padding:10px 16px;font-weight:700;font-size:14px;">'
+        f"⚠️ {_PREVIEW_LABEL} — "
+        '<a href="https://kunil-choi.github.io/stock-briefing-v3/" '
+        'style="color:#fff;text-decoration:underline;">정식 공개 브리핑은 여기</a>'
+        "</div>"
+    )
+    return html.replace('<div class="briefing-header">', banner + '<div class="briefing-header">', 1)
 
 
 def safe_collect(fn, *args, label="", **kwargs):
@@ -167,7 +194,7 @@ def main():
     # ai_analyzer._get_price_label()이 실행 시각(09:20+) 기준으로 자동 처리한다.
     print("\n[AI 분석] Claude 분석 + Gemini 검수 시작...")
     try:
-        analyze_and_generate_html(
+        html = analyze_and_generate_html(
             all_data,
             channels_data=channels,
             gh_repo=GITHUB_REPO,
@@ -178,8 +205,21 @@ def main():
         print(f"[AI 분석 실패] {e}")
         raise
 
+    # ── 아카이브 + HTML 저장 (프리뷰 배너를 얹어 docs/index.html로 공개) ──
+    os.makedirs("docs/archive", exist_ok=True)
+    existing_index = "docs/index.html"
+    if os.path.exists(existing_index):
+        archive_date = datetime.now(KST).strftime("%Y-%m-%d")
+        archive_path = f"docs/archive/{archive_date}.html"
+        if not os.path.exists(archive_path):
+            shutil.copy2(existing_index, archive_path)
+            print(f"[아카이브] 저장: {archive_path}")
+    with open("docs/index.html", "w", encoding="utf-8") as f:
+        f.write(_label_preview_html(html))
+    print("[저장] docs/index.html 저장 (GitHub Pages 프리뷰)")
+
     elapsed = datetime.now(KST).timestamp() - start_time
-    print(f"\n✅ V3_2 데이터 생성 완료 → data/briefing_data.json")
+    print(f"\n✅ V3_2 데이터 생성 완료 → data/briefing_data.json, docs/index.html")
     print(f"=== 완료: {datetime.now(KST).strftime('%Y-%m-%d %H:%M:%S KST')} "
           f"(소요: {elapsed:.0f}초) ===")
 

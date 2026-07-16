@@ -28,6 +28,19 @@
   `stock-briefing-step2`가
   `raw.githubusercontent.com/kunil-choi/stock-briefing-v3-2/main/data/briefing_data.json`
   으로 직접 소비.
+- `docs/index.html` — GitHub Pages 프리뷰 페이지. `stock-briefing-v3-1`과 동일한
+  방식(`analyzer/html_generator.py`는 무수정, 반환된 HTML에 프리뷰 배너만 얹음)이며
+  step2 영상 제작에 쓰인 리포트 포함 최종 데이터를 확인하는 용도입니다. 정식
+  `stock-briefing-v3` 공개 사이트를 대체하지 않습니다(v3는 자동 실행 중단 상태로
+  그대로 유지, step1/step2 영상 업로드가 시작되면 v3가 다시 정식 공개 사이트 역할을
+  맡을 계획).
+
+## GitHub Pages 활성화 (최초 1회, 수동)
+
+레포 Settings → Pages → Build and deployment → Source: **Deploy from a branch**
+→ Branch: `main` / `/docs` 선택 후 Save. 이후 워크플로우가 `docs/index.html`을
+커밋할 때마다 자동 반영되며, 다음 주소에서 확인할 수 있습니다:
+`https://kunil-choi.github.io/stock-briefing-v3-2/`
 
 ## 트리거 체인
 
