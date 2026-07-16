@@ -514,9 +514,18 @@ def collect_analyst(api_key: str = "") -> list:
     today_str     = datetime.now(KST).strftime("%y.%m.%d")
     yesterday_str = (datetime.now(KST) - timedelta(days=1)).strftime("%y.%m.%d")
 
-    # ── 오늘 리포트 수집 (REPORT_DAYS=1) ─────────────────────────
+    # ── 오늘 리포트 수집 ──────────────────────────────────────────
+    # ★ 버그 수정: 예전에는 collect_naver_research()를 인자 없이 호출해
+    # 기본값(이 모듈 상단의 REPORT_DAYS=2, config.py의 REPORT_DAYS=1과는
+    # 다른 상수임 — 이름이 같아 혼동되기 쉽다)을 그대로 썼다. is_within_days()는
+    # ">=" 비교라 days=2면 오늘/어제/그제(최대 3일치)가 전부 통과하는데, 이
+    # 결과를 그대로 today_classified에 넣고 무조건 report_day="today"로
+    # 라벨링했다 — 실제로 이틀 전 리포트가 "오늘 리포트"로 영상 내레이션에
+    # 노출되는 사고가 있었다(예: 07-16 수집인데 07-14자 리포트가 "오늘"로 표시).
+    # "어제" 수집과 동일한 패턴(넉넉히 가져온 뒤 정확한 날짜로 필터링)으로 통일한다.
     print(f"  [오늘 {today_str}] 수집 중...")
-    today_reports = collect_naver_research()  # REPORT_DAYS=1 기본값
+    today_reports_raw = collect_naver_research(days=2)
+    today_reports = [r for r in today_reports_raw if r.get("date", "") == today_str]
     today_classified = _dedupe_and_classify(today_reports)
 
     for r in today_classified["simultaneous"]:
