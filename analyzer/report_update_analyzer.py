@@ -62,10 +62,13 @@ def build_step1_recap(step1_data: dict) -> dict:
     market_summary = step1_data.get("market_summary", "") or ""
     gist = market_summary.split("\n\n")[0].strip() if market_summary else ""
 
+    # HIDDEN-PICK-REMOVE: V3-1은 "오늘의 픽"을 더 이상 만들지 않는다(관심종목에
+    # 후보 풀을 집중시키기 위해 제거됨). "오늘의 픽" 컨셉은 증권사 리포트
+    # 데이터가 있는 이 레포로 이전되어 single_significant 카테고리가 담당한다
+    # (build_analyst_briefing 참고).
     return {
         "market_leaders":      _names("market_leaders"),
         "stocks":              _names("stocks"),
-        "hidden_picks":        _names("hidden_picks"),
         "market_summary_gist": gist,
     }
 
@@ -75,8 +78,7 @@ def build_step1_recap(step1_data: dict) -> dict:
 def build_morning_reaction(step1_data: dict) -> list:
     """STEP-1이 선정한 대형주도주+관심종목의 오전장 현재가를 재조회해
     STEP-1 시점 가격 대비 반응을 정리한다. STEP-1이 갖고 있지 않던 "진짜 새
-    정보"이므로 STEP-2의 핵심 섹션 중 하나. 오늘의 픽은 조회 비용 절감을
-    위해 다루지 않는다(핵심 종목만으로도 반응 업데이트 목적은 충분함)."""
+    정보"이므로 STEP-2의 핵심 섹션 중 하나."""
     reaction = []
     for bucket in ("market_leaders", "stocks"):
         for s in step1_data.get(bucket) or []:
@@ -114,7 +116,9 @@ _ANALYST_BRIEFING_PROMPT = """
    외의 수치나 전망을 새로 지어내지 마세요.
 3. category가 "simultaneous"(여러 증권사 동시언급)인 종목은 특히 강조해서
    작성하세요.
-4. 순수 JSON만 출력하고 설명문·마크다운 코드블록은 넣지 마세요.
+4. category가 "single_significant"(단독 리포트지만 주목할 만한 종목)인
+   종목은 "오늘의 픽"으로 소개하는 어조로 작성하세요.
+5. 순수 JSON만 출력하고 설명문·마크다운 코드블록은 넣지 마세요.
 
 [리포트 데이터]
 {reports_json}

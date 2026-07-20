@@ -185,7 +185,7 @@ def main():
 
     step1_recap = build_step1_recap(step1_data)
     print(f"  [리캡] 대형주도주:{step1_recap['market_leaders']} "
-          f"관심종목:{len(step1_recap['stocks'])}개 오늘의픽:{len(step1_recap['hidden_picks'])}개")
+          f"관심종목:{len(step1_recap['stocks'])}개")
 
     print("  [오전장 반응] 조회 중...")
     morning_reaction = build_morning_reaction(step1_data)

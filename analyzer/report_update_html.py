@@ -21,7 +21,7 @@ _TIER_LABEL = {
 _CATEGORY_META = {
     "simultaneous":        {"color": "#ff922b", "badge": "🔥 동시언급"},
     "new_coverage":        {"color": "#51cf66", "badge": "🆕 신규 커버리지"},
-    "single_significant":  {"color": "#74c0fc", "badge": ""},
+    "single_significant":  {"color": "#f06595", "badge": "💎 오늘의 픽"},
 }
 
 
@@ -49,7 +49,6 @@ def _render_recap(recap: dict) -> str:
   <div class="section-title">📌 오늘 아침(STEP-1) 리캡</div>
   <div class="recap-row"><b>대형주도주</b> {_chips(recap.get('market_leaders'))}</div>
   <div class="recap-row"><b>관심종목</b> {_chips(recap.get('stocks'))}</div>
-  <div class="recap-row"><b>오늘의 픽</b> {_chips(recap.get('hidden_picks'))}</div>
   {gist_html}
 </div>"""
 
