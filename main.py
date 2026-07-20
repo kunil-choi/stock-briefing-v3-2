@@ -2,20 +2,26 @@
 """
 stock-briefing-v3-2 — report_update 영상용 "장중 업데이트" 데이터 파이프라인
 
-stock-briefing-v3-1이 만든 data/raw_YYYYMMDD.json(시장데이터/뉴스/유튜브/Gemini
-분석 원본)을 raw.githubusercontent.com으로 재사용하고, 여기에 애널리스트 리포트
-수집만 새로 추가해 09:20 KST 이후 report_update 영상이 참조할 "리포트+오전장 반영"
-스냅샷을 만든다. v3 원본은 수정하지 않고 이 레포에 독립적으로 복사·유지한다.
+설계 원칙(재설계, GEMINI-YT-6 이후 논의): STEP-1과 STEP-2는 "각자 완결된
+브리핑"이 아니라 "하루짜리 연속 시리즈의 1부/2부"다. 그래서 이 레포는 더 이상
+V3_1의 원본 수집 데이터를 갖고 처음부터 종목선정을 다시 하지 않는다. 대신
+V3_1이 이미 만든 결과물(data/briefing_data.json — 종목선정·시장요약·AI전략
+전부 끝난 상태)을 그대로 갖고 와서, 그 위에 "새 정보"만 얹는다:
 
-애널리스트 재시도 루프(08:00 대기 ~ 08:30 강제진행, 최대 120분)는
-stock-briefing-v3의 main.py 로직을 그대로 복사했다.
+  A. STEP-1 리캡 재료(어떤 종목을 다뤘는지)
+  B. 오전장 반응 업데이트(STEP-1 시점 가격 대비 지금 가격)
+  C. 증권사 리포트 브리핑(섹터 테마 + 종목별 심화 분석)
+  D. AI전략 업데이트(처음부터 다시 만들지 않고 "무엇이 보강됐는지"로 작성)
+
+애널리스트 재시도 루프(08:00 대기 ~ 08:30 강제진행, 최대 120분)는 기존과
+동일하게 유지한다.
 
 산출물:
-- data/briefing_data.json : brokerage_reports가 포함된 버전
+- data/briefing_data.json : {length_tier, step1_recap, morning_reaction,
+  analyst_briefing, ai_strategy_update, brokerage_reports, market_data}
   (stock-briefing-step2가 raw.githubusercontent.com으로 직접 소비)
 - docs/index.html         : GitHub Pages 프리뷰 페이지(사람이 눈으로 데이터를
-  확인하기 위한 용도). stock-briefing-v3의 공개 브리핑 사이트를 대체하는 게
-  아니라 별도 프리뷰다 — v3는 현재 자동 실행이 중단된 상태로 그대로 유지된다.
+  확인하기 위한 용도).
 
 완료 후 GH_TOKEN으로 stock-briefing-step2(report_update.yml)를
 workflow_dispatch로 트리거한다.
@@ -29,42 +35,27 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 from config import (
-    ANTHROPIC_API_KEY, GH_TOKEN, GITHUB_REPO, load_channels,
+    ANTHROPIC_API_KEY, GH_TOKEN,
 )
-from collectors.analyst_collector import collect_analyst
-from analyzer.ai_analyzer          import analyze_and_generate_html
+from collectors.analyst_collector          import collect_analyst
+from analyzer.ai_analyzer                  import build_brokerage_reports
+from analyzer.report_update_analyzer       import (
+    decide_length_tier,
+    build_step1_recap,
+    build_morning_reaction,
+    build_analyst_briefing,
+    build_ai_strategy_update,
+)
+from analyzer.report_update_html           import generate_report_update_html
 
 KST = ZoneInfo("Asia/Seoul")
 
-V3_1_RAW_URL_TMPL = (
+V3_1_BRIEFING_URL = (
     "https://raw.githubusercontent.com/kunil-choi/stock-briefing-v3-1/main/"
-    "data/raw_{date}.json"
+    "data/briefing_data.json"
 )
 UPSTREAM_MAX_WAIT_MIN = 15
 UPSTREAM_RETRY_SEC    = 5 * 60
-
-# 이 레포도 v3-1과 동일하게 "정식 V3 공개 사이트"가 아니라 report_update(step2)
-# 영상 제작에 쓰인 최종(리포트 포함) 데이터를 확인하기 위한 프리뷰다. 공유 모듈
-# (analyzer/html_generator.py는 v3/v3-1과 바이트 단위로 동일하게 유지)은 건드리지
-# 않고 반환된 HTML 문자열에만 배너/타이틀을 얹어 구분한다.
-_PREVIEW_LABEL = "V3-2 프리뷰 · 증권사 리포트 포함 최종 스냅샷 (step2 영상 제작용 데이터)"
-
-
-def _label_preview_html(html: str) -> str:
-    html = html.replace(
-        "<title>AI 주식 브리핑",
-        "<title>[V3-2 프리뷰] AI 주식 브리핑",
-        1,
-    )
-    banner = (
-        '<div style="background:#111827;color:#fbbf24;text-align:center;'
-        'padding:10px 16px;font-weight:700;font-size:14px;">'
-        f"⚠️ {_PREVIEW_LABEL} — "
-        '<a href="https://kunil-choi.github.io/stock-briefing-v3/" '
-        'style="color:#fff;text-decoration:underline;">정식 공개 브리핑은 여기</a>'
-        "</div>"
-    )
-    return html.replace('<div class="briefing-header">', banner + '<div class="briefing-header">', 1)
 
 
 def safe_collect(fn, *args, label="", **kwargs):
@@ -76,27 +67,29 @@ def safe_collect(fn, *args, label="", **kwargs):
         return []
 
 
-def fetch_v3_1_raw_data(today_str: str) -> list:
-    """stock-briefing-v3-1이 발행한 raw_YYYYMMDD.json을 가져온다.
-    V3_1이 workflow_dispatch로 이 레포를 트리거하는 구조라 정상적으로는
-    거의 항상 이미 존재하지만, 전파 지연 등에 대비해 짧게 재시도한다."""
-    url = V3_1_RAW_URL_TMPL.format(date=today_str)
+def fetch_v3_1_briefing_data(expected_date: str) -> dict:
+    """stock-briefing-v3-1이 발행한 data/briefing_data.json(이미 종목선정·
+    AI전략까지 끝난 결과물)을 가져온다. briefing_date가 오늘과 다르면(V3_1이
+    아직 오늘자를 못 올렸으면) 재시도한다 — V3_1이 workflow_dispatch로 이
+    레포를 트리거하는 구조라 정상적으로는 거의 항상 즉시 일치한다."""
     waited_min = 0
     while waited_min <= UPSTREAM_MAX_WAIT_MIN:
         try:
-            with urllib.request.urlopen(url, timeout=15) as resp:
+            with urllib.request.urlopen(V3_1_BRIEFING_URL, timeout=15) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
-            print(f"✅ V3_1 raw 데이터 로드 완료: {len(data)}건 ({url})")
-            return data
+            if data.get("briefing_date") == expected_date:
+                print(f"✅ V3_1 briefing_data.json 로드 완료 (날짜 일치: {expected_date})")
+                return data
+            print(f"⚠️  V3_1 briefing_data.json 날짜 불일치 "
+                  f"(기대:{expected_date}, 실제:{data.get('briefing_date')})")
         except Exception as e:
-            print(f"⚠️  V3_1 raw 데이터 조회 실패 ({e}) — {url}")
-            if waited_min >= UPSTREAM_MAX_WAIT_MIN:
-                break
-            print(f"  🔄 {UPSTREAM_RETRY_SEC // 60}분 후 재시도 "
-                  f"(대기 누계: {waited_min}분)")
-            time.sleep(UPSTREAM_RETRY_SEC)
-            waited_min += UPSTREAM_RETRY_SEC // 60
-    return []
+            print(f"⚠️  V3_1 briefing_data.json 조회 실패 ({e})")
+        if waited_min >= UPSTREAM_MAX_WAIT_MIN:
+            break
+        print(f"  🔄 {UPSTREAM_RETRY_SEC // 60}분 후 재시도 (대기 누계: {waited_min}분)")
+        time.sleep(UPSTREAM_RETRY_SEC)
+        waited_min += UPSTREAM_RETRY_SEC // 60
+    return {}
 
 
 def main():
@@ -113,10 +106,16 @@ def main():
         print("❌ ANTHROPIC_API_KEY 없음 → 실행 중단")
         raise SystemExit(1)
 
-    # ── 채널 로드 (ai_analyzer의 channel_mentions 매핑에 필요) ─────────────
-    channels = load_channels()
+    # ── 1. STEP-1(V3_1)의 완성된 브리핑 재사용 ─────────────────────────────
+    expected_date = now_kst.strftime("%Y년 %m월 %d일")
+    step1_data = fetch_v3_1_briefing_data(expected_date)
+    if not step1_data:
+        print(f"\n❌ V3_1의 오늘자 briefing_data.json을 {UPSTREAM_MAX_WAIT_MIN}분 내에 "
+              f"가져오지 못했습니다 → 오늘 report_update 생성을 스킵합니다.")
+        print("status: upstream_not_ready")
+        return
 
-    # ── 0. 시장 데이터 재조회 (오전장 반영 — V3_1의 개장 전 수치보다 최신) ──
+    # ── 2. 시장 데이터 재조회 (오전장 반영) ─────────────────────────────────
     print("\n[시장 데이터 재조회] (오전장 반영)")
     try:
         from collectors.market_collector import collect_market_overview
@@ -125,16 +124,7 @@ def main():
         print(f"  [시장데이터 재조회 실패] {e}")
         market_overview = {}
 
-    # ── 1. V3_1의 raw 데이터 재사용 (뉴스/유튜브/Gemini 재수집 안 함) ──────
-    today_str = now_kst.strftime("%Y%m%d")
-    all_data  = fetch_v3_1_raw_data(today_str)
-    if not all_data:
-        print(f"\n❌ V3_1 데이터를 {UPSTREAM_MAX_WAIT_MIN}분 내에 가져오지 못했습니다 "
-              f"({today_str}) → 오늘 report_update 생성을 스킵합니다.")
-        print("status: upstream_not_ready")
-        return
-
-    # ── 2. 애널리스트 리포트 수집 (v3 main.py의 재시도 루프와 100% 동일) ──
+    # ── 3. 애널리스트 리포트 수집 (기존 재시도 루프와 100% 동일) ───────────
     print("\n[애널리스트 리포트 수집] (본문 크롤링 + Claude 요약 포함)...")
     _TARGET_HOUR   = 8
     _MIN_REPORTS   = 20
@@ -185,27 +175,51 @@ def main():
         time.sleep(_RETRY_SEC)
         waited_min += _RETRY_SEC // 60
 
-    all_data = all_data + analyst_data
     print(f"  → 최종 애널리스트 데이터: {len(analyst_data)}건")
 
-    # ── 3. AI 분석 (Claude) — data/briefing_data.json은 이 호출 내부에서 저장됨 ──
-    # V3_1의 raw all_data + 애널리스트 데이터를 합쳐 재분석하므로, 시장 리더/관심종목
-    # 랭킹도 애널리스트 언급까지 반영해 다시 계산된다. 오전장 반영 현재가는
-    # ai_analyzer._get_price_label()이 실행 시각(09:20+) 기준으로 자동 처리한다.
-    print("\n[AI 분석] Claude 분석 + Gemini 검수 시작...")
-    try:
-        html = analyze_and_generate_html(
-            all_data,
-            channels_data=channels,
-            gh_repo=GITHUB_REPO,
-            gh_token=GH_TOKEN,
-            market_overview=market_overview,
-        )
-    except Exception as e:
-        print(f"[AI 분석 실패] {e}")
-        raise
+    # ── 4. STEP-1 결과물 위에 새 정보를 얹는다 (재분석 아님) ────────────────
+    print("\n[분석] STEP-1 위에 오전장 반응/리포트 브리핑/전략 업데이트 얹기...")
+    brokerage_reports = build_brokerage_reports(analyst_data)
 
-    # ── 아카이브 + HTML 저장 (프리뷰 배너를 얹어 docs/index.html로 공개) ──
+    length_tier = decide_length_tier(brokerage_reports)
+
+    step1_recap = build_step1_recap(step1_data)
+    print(f"  [리캡] 대형주도주:{step1_recap['market_leaders']} "
+          f"관심종목:{len(step1_recap['stocks'])}개 오늘의픽:{len(step1_recap['hidden_picks'])}개")
+
+    print("  [오전장 반응] 조회 중...")
+    morning_reaction = build_morning_reaction(step1_data)
+    print(f"  → {len(morning_reaction)}개 종목 반응 확보")
+
+    print("  [리포트 브리핑] Claude 심화 분석 중...")
+    analyst_briefing = build_analyst_briefing(brokerage_reports, ANTHROPIC_API_KEY)
+    print(f"  → 섹터테마 {len(analyst_briefing.get('sector_themes', []))}개, "
+          f"종목분석 {len(analyst_briefing.get('stocks', []))}개")
+
+    print("  [전략 업데이트] Claude 호출 중...")
+    ai_strategy_update = build_ai_strategy_update(
+        step1_data.get("ai_strategy", ""), brokerage_reports, ANTHROPIC_API_KEY
+    )
+
+    result = {
+        "briefing_date":      step1_data.get("briefing_date", expected_date),
+        "generated_at":       now_kst.strftime("%H:%M"),
+        "length_tier":        length_tier,
+        "step1_recap":        step1_recap,
+        "morning_reaction":   morning_reaction,
+        "analyst_briefing":   analyst_briefing,
+        "ai_strategy_update": ai_strategy_update,
+        "brokerage_reports":  brokerage_reports,
+        "market_data":        market_overview,
+    }
+
+    os.makedirs("data", exist_ok=True)
+    with open("data/briefing_data.json", "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+    print("\n[저장] data/briefing_data.json 저장 완료")
+
+    # ── 아카이브 + HTML 저장 (docs/index.html) ─────────────────────────────
+    html = generate_report_update_html(result)
     os.makedirs("docs/archive", exist_ok=True)
     existing_index = "docs/index.html"
     if os.path.exists(existing_index):
@@ -215,11 +229,12 @@ def main():
             shutil.copy2(existing_index, archive_path)
             print(f"[아카이브] 저장: {archive_path}")
     with open("docs/index.html", "w", encoding="utf-8") as f:
-        f.write(_label_preview_html(html))
+        f.write(html)
     print("[저장] docs/index.html 저장 (GitHub Pages 프리뷰)")
 
     elapsed = datetime.now(KST).timestamp() - start_time
-    print(f"\n✅ V3_2 데이터 생성 완료 → data/briefing_data.json, docs/index.html")
+    print(f"\n✅ V3_2 데이터 생성 완료 (길이티어: {length_tier}) → "
+          f"data/briefing_data.json, docs/index.html")
     print(f"=== 완료: {datetime.now(KST).strftime('%Y-%m-%d %H:%M:%S KST')} "
           f"(소요: {elapsed:.0f}초) ===")
 
