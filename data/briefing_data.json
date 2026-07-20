@@ -1,419 +1,155 @@
 {
-  "briefing_date": "2026년 07월 20일",
-  "market_summary": "전일(7월 19일) 미국 증시는 중국 AI 스타트업 문샷AI의 '키미 K3' 공개에 따른 충격으로 반도체 매도세가 지속되며 하락 마감했다. SK하이닉스 ADR은 반도체 업종 전반의 약세 속에서도 약 25%의 프리미엄을 유지하며 상대적 강세를 보였고, 미·이란 확전 양상에 국제유가는 4.5% 급등하는 등 에너지 시장도 크게 요동쳤다. 전전일(7월 18일) 기준 달러·원 환율은 이달 초 1,560원에 육박했던 수준에서 빠르게 하락해 1,500원 아래로 내려앉으며 원화 강세가 두드러졌다.\n\n주요 이슈로는 중국 AI '키미 K3' 등장이 제2의 딥시크 쇼크 가능성으로 거론되며 실리콘밸리와 글로벌 반도체주에 심리적 충격을 줬다. 미국과 이란 간 확전 양상이 심화되며 호르무즈 해협 위기가 고조되고 국제유가가 급반등하면서 정유·에너지 섹터 수혜 기대가 커졌다. 연준 내 매파 발언이 확산되며 금리 인상 우려가 재점화됐고, 이번 주 알파벳·인텔 등 빅테크 실적 발표가 AI 투자 서사의 지속 여부를 가를 분수령으로 주목받고 있다. 정부는 원화 국제화 로드맵을 발표해 외국인이 뉴욕·런던 등 해외 은행에서 원화 계좌를 개설하고 국내 주식에 투자할 수 있는 인프라 구축에 나섰다.\n\n긍정적 측면으로는 ASML·TSMC의 호실적이 확인됐고 삼성전자·SK하이닉스 역시 양호한 실적을 기록했다는 점에서 반도체 업황 자체의 훼손보다는 심리적 매도세라는 분석이 제기됐다. 바클레이스는 SK하이닉스 ADR에 대해 목표가 330달러를 제시하며 긍정적 시각을 유지했다. 반면 중국발 AI 쇼크, 미·이란 전쟁 리스크, 연준 매파 기조 등 3대 악재가 동시에 부각되며 코스피 변동성이 크게 확대됐고, 대졸 실업자가 5년 만에 최대치인 48만 명을 기록하는 등 내수·고용 여건도 불안한 흐름이다. 하반기 주택담보대출 규제 강화와 DSR 소득 인정 기준 변경도 부동산 시장에 추가 압력으로 작용할 전망이다.\n\n단기적으로는 이번 주 예정된 알파벳·인텔 등 빅테크 실적 발표 결과가 AI 투자 서사와 반도체 수요 전망을 재확인하는 핵심 변수가 될 것으로 보인다. 중동 확전 여부와 연준 통화정책 방향, 중국 AI 기술 진전 속도가 글로벌 변동성의 3대 축으로 작용하고 있어 단기 방향성을 단정하기 어려운 환경이다. 반도체주의 낙폭 과대에 따른 저가 매수 기회를 모색하는 시각과 추가 하락 가능성을 경계하는 시각이 팽팽히 맞서고 있어 실적 발표 전후 변동성 관리가 중요한 시점이다.",
-  "hot_sectors": [
+  "briefing_date": "2026년 07월 21일",
+  "generated_at": "08:13",
+  "length_tier": "shorts",
+  "step1_recap": {
+    "market_leaders": [
+      "SK하이닉스",
+      "삼성전자"
+    ],
+    "stocks": [
+      "카카오",
+      "삼성SDI",
+      "KB금융",
+      "HD현대",
+      "두산에너빌리티",
+      "한화에어로스페이스",
+      "LG에너지솔루션",
+      "LG화학"
+    ],
+    "market_summary_gist": "전일 뉴욕증시는 미국·이란 군사 충돌 재격화와 국제유가 상승 우려로 일제히 하락했다. 다만 반도체·AI 관련주에 저가매수세가 유입되며 하락 폭이 제한됐고, 지난주 대폭 하락 후 반도체 지수는 부분 반등에 나섰다. 국내 증시에서는 VKOSPI(코스피200 변동성지수)가 2008년 금융위기 때보다 높은 사상 최고치를 기록하며 극도의 투자 심리 위축이 확인됐다."
+  },
+  "morning_reaction": [
     {
-      "name": "반도체",
-      "reason": "키미쇼크·낙폭과대"
-    },
-    {
-      "name": "정유·에너지",
-      "reason": "중동확전·유가급등"
-    },
-    {
-      "name": "AI·빅테크",
-      "reason": "빅테크실적시즌"
-    },
-    {
-      "name": "방산",
-      "reason": "중동리스크부각"
-    },
-    {
-      "name": "배터리·ESS",
-      "reason": "ESS수요확대"
-    }
-  ],
-  "market_leaders": [
-    {
-      "rank": 1,
-      "name": "삼성전자",
-      "code": "005930",
-      "signal": "중립",
-      "summary": "중국 AI '키미 K3' 충격과 반도체 매도세 지속으로 심리적 위축이 이어지고 있으나, 실적 자체는 양호한 흐름이 확인됐다. 전문가들은 산업 훼손보다는 심리적 매도세로 진단하며 낙폭 과대 국면에서의 저가 매수 관점을 제시하고 있다.",
-      "catalyst": "반도체 업황 자체는 ASML·TSMC 호실적으로 뒷받침되고 있으며, 최태원 SK 회장은 반도체 대란이 더 심각해질 것이라며 수요 지속을 전망했다. 원화 강세와 외국인 원화 직접투자 인프라 확충은 중장기 외국인 수급 개선 기대를 높인다.",
-      "risk": "중국 AI 기술 고도화에 따른 엔비디아·HBM 수요 둔화 우려와 미·이란 확전, 연준 매파 기조 등 복합 악재가 단기 주가 압력으로 작용하고 있다. 기사발 심리적 위축에 따른 변동성 확대가 지속될 수 있다.",
-      "channel_mentions": [
-        {
-          "source_type": "경제방송",
-          "source_name": "TomatoTV",
-          "content": "정상 상태에 거의 도달했지만 기사발 심리적 위축으로 삼성전자 약세 지속. 변동성 확대 원인으로 기사 심리 영향 분석.",
-          "url": "https://www.youtube.com/watch?v=heHqapNjXoU"
-        },
-        {
-          "source_type": "경제방송",
-          "source_name": "TomatoTV",
-          "content": "중동 리스크·AI 충격 속 낙폭 과대 TOP PICK으로 반도체 섹터 언급, 삼성전자 저가 매수 관점 제시.",
-          "url": "https://www.youtube.com/watch?v=MREp_-piKSY"
-        },
-        {
-          "source_type": "유튜브",
-          "source_name": "삼프로TV",
-          "content": "반도체 급락은 산업 훼손이 아닌 심리 붕괴로 진단. 실적 발표 후 주가 재상승 가능성 논의.",
-          "url": "https://www.youtube.com/watch?v=NG5CIlcRugY"
-        },
-        {
-          "source_type": "경제방송",
-          "source_name": "KBS 1라디오",
-          "content": "AI 서사와 반도체 흥망은 엔비디아 주가에 달려 있으며, 7월 코스피 변동률 평균 6.75% 수준의 높은 변동성 지속.",
-          "url": "https://www.youtube.com/watch?v=xzmd7GRFar0"
-        }
-      ],
-      "channel_counts": {
-        "뉴스": 2,
-        "경제방송": 9,
-        "유튜브": 9
-      },
-      "total_count": 20,
-      "weighted_score": 33.09,
-      "overlap_count": 2,
-      "reasons": [],
-      "price": 244000,
-      "change_pct": -4.31,
-      "price_label": "현재가"
-    },
-    {
-      "rank": 2,
       "name": "SK하이닉스",
       "code": "000660",
-      "signal": "긍정",
-      "summary": "전일 미국 증시에서 반도체 매도세가 지속됐음에도 SK하이닉스 ADR은 약 25%의 프리미엄을 유지하며 상대적 강세를 보였다. 바클레이스가 목표가 330달러를 제시하며 긍정적 시각을 유지했고, 옵션 거래 급증으로 시장의 높은 관심이 확인됐다.",
-      "catalyst": "HBM 중심의 AI 반도체 수요 구조는 중국 AI 쇼크에도 불구하고 훼손되지 않았다는 분석이 우세하며, 최태원 회장의 반도체 대란 심화 전망이 수요 지속성을 뒷받침한다. 바클레이스의 ADR 목표가 330달러 제시는 해외 기관의 긍정적 시각을 반영한다.",
-      "risk": "중국 키미 K3 등 AI 경쟁 심화로 엔비디아향 HBM 수요 둔화 우려가 재부각될 수 있으며, 반도체주 매도세 지속 시 추가 변동성 확대 가능성이 있다.",
-      "channel_mentions": [
-        {
-          "source_type": "경제방송",
-          "source_name": "이데일리TV",
-          "content": "SK하이닉스 ADR, 반도체 약세에도 25% 프리미엄 유지. 바클레이스 목표가 330달러 제시.",
-          "url": "https://www.youtube.com/watch?v=vJnDgdxT__Y"
-        },
-        {
-          "source_type": "유튜브",
-          "source_name": "815머니톡",
-          "content": "SK하이닉스 옵션 거래 급증 확인, 반도체 급락 이후 바닥 형성 여부 논의. 빠지면 또 파는 악순환 우려도 병존.",
-          "url": "https://www.youtube.com/watch?v=zbPaFB3Q20Q"
-        },
-        {
-          "source_type": "경제방송",
-          "source_name": "TomatoTV",
-          "content": "키미 모먼트로 투심 악화됐지만 저점 매수 관점에서 SK하이닉스 주목. 낙폭 과대 상황에서 반도체 저점 매수 전략 제시.",
-          "url": "https://www.youtube.com/watch?v=AyuhWB7_o30"
-        },
-        {
-          "source_type": "경제방송",
-          "source_name": "KBS 1라디오",
-          "content": "미 증시 반도체 매도세 지속으로 하락, 중국 키미 K3 충격에 AI 반도체 급락 흐름 분석.",
-          "url": "https://www.youtube.com/watch?v=5SH3bRCHbPU"
-        }
-      ],
-      "channel_counts": {
-        "뉴스": 1,
-        "경제방송": 12,
-        "유튜브": 5
-      },
-      "total_count": 18,
-      "weighted_score": 27.82,
-      "overlap_count": 2,
-      "reasons": [],
-      "price": 1776000,
-      "change_pct": -3.58,
-      "price_label": "현재가"
-    }
-  ],
-  "stocks": [
-    {
-      "rank": 1,
-      "name": "삼성SDI",
-      "code": "006400",
-      "signal": "긍정",
-      "summary": "2분기 흑자전환에 성공한 삼성SDI는 3분기 EV 수요 회복과 ESS 판매 확대로 실적 개선세가 지속될 전망이다. 신한투자증권의 매수 의견과 함께 52주 신고가 기업으로도 분석 대상에 올랐다.",
-      "catalyst": "EV 수요 회복과 ESS 채택 확대라는 두 가지 성장 축이 동시에 작동하며 실적 개선 모멘텀이 강화되고 있다. ESS 시장에서의 점유율 확대와 대형 고객사와의 수주 확대가 하반기 실적 가시성을 높인다.",
-      "risk": "전일 주가가 -6.10% 하락하는 등 전반적인 시장 변동성 확대 속에서 단기 주가 압력이 지속될 수 있다. EV 수요 회복 속도가 기대에 미치지 못할 경우 실적 개선 폭이 제한될 리스크가 있다.",
-      "channel_mentions": [
-        {
-          "source_type": "애널리스트",
-          "source_name": "신한투자증권",
-          "content": "2분기 흑자전환 후 3분기 EV 수요 회복과 ESS 판매 확대로 실적 개선 기대. 매수 의견 제시.",
-          "url": "https://finance.naver.com/research/company_read.naver?nid=94269&page=1"
-        },
-        {
-          "source_type": "유튜브",
-          "source_name": "체슬리TV",
-          "content": "52주 신고가 기업분석 대상으로 삼성SDI 포함, ESS 채택 확대를 핵심 성장 축으로 분석.",
-          "url": "https://www.youtube.com/watch?v=vW3PdTJIjQo"
-        }
-      ],
-      "channel_counts": {
-        "유튜브": 1,
-        "애널리스트": 1
-      },
-      "total_count": 2,
-      "weighted_score": 6.16,
-      "overlap_count": 2,
-      "reasons": [],
-      "price": 408000,
-      "change_pct": -6.1,
-      "price_label": "현재가"
+      "bucket": "market_leaders",
+      "step1_price": 1764000,
+      "step1_change_pct": -4.23,
+      "morning_price": 1764000,
+      "morning_change_pct": 0.0
     },
     {
-      "rank": 2,
-      "name": "한화에어로스페이스",
-      "code": "012450",
-      "signal": "긍정",
-      "summary": "2분기 영업이익이 9,473억원으로 시장 기대치를 상회하며 어닝 서프라이즈를 기록했다. 키움증권은 하반기 실적 개선과 수주 동반 개선을 전망하며 긍정적 시각을 유지했다.",
-      "catalyst": "중동 전쟁 리스크 고조와 글로벌 방산 수요 증가가 하반기 수주 모멘텀을 강화하고 있다. 2분기 어닝 서프라이즈를 기반으로 연간 실적 상향 조정 기대가 높아지고 있다.",
-      "risk": "전일 주가가 -4.67% 하락하는 등 시장 전반의 변동성 확대에서 자유롭지 못하며, 환율 변동성이 수익성에 영향을 줄 수 있다.",
-      "channel_mentions": [
-        {
-          "source_type": "애널리스트",
-          "source_name": "키움증권",
-          "content": "2분기 영업이익 9,473억원으로 기대치 상회, 하반기 실적과 수주 동반 개선 기대.",
-          "url": "https://finance.naver.com/research/company_read.naver?nid=94259&page=1"
-        }
-      ],
-      "channel_counts": {
-        "애널리스트": 1
-      },
-      "total_count": 1,
-      "weighted_score": 3.75,
-      "overlap_count": 1,
-      "reasons": [],
-      "price": 899000,
-      "change_pct": -4.67,
-      "price_label": "현재가"
+      "name": "삼성전자",
+      "code": "005930",
+      "bucket": "market_leaders",
+      "step1_price": 244000,
+      "step1_change_pct": -4.31,
+      "morning_price": 244000,
+      "morning_change_pct": 0.0
     },
     {
-      "rank": 3,
-      "name": "SK텔레콤",
-      "code": "017670",
-      "signal": "긍정",
-      "summary": "앤트로픽 기업가치 상승과 데이터센터 수혜 가능성으로 업사이드 리스크가 현 주가 대비 크다는 분석이 제시됐다. 신한투자증권은 현 주가 수준에서의 매수 관점을 유지했다.",
-      "catalyst": "메타와 앤트로픽의 연산 자원 협력 확대 소식이 AI 인프라 수요를 자극하고 있으며, 앤트로픽 지분 가치 상승이 SK텔레콤의 보유 자산 가치 재평가 계기가 될 수 있다. 데이터센터 수요 증가는 통신 인프라 사업자로서의 수혜로 이어질 전망이다.",
-      "risk": "전일 주가가 -5.46% 하락하는 등 시장 변동성의 영향을 받고 있으며, AI 투자 성과의 실적 가시화까지는 시간이 필요하다.",
-      "channel_mentions": [
-        {
-          "source_type": "애널리스트",
-          "source_name": "신한투자증권",
-          "content": "앤트로픽 기업가치 상승 및 데이터센터 수혜 가능성으로 현 주가 기준 업사이드 리스크가 더 크다고 판단.",
-          "url": "https://finance.naver.com/research/company_read.naver?nid=94268&page=1"
-        }
-      ],
-      "channel_counts": {
-        "애널리스트": 1
-      },
-      "total_count": 1,
-      "weighted_score": 2.5,
-      "overlap_count": 1,
-      "reasons": [],
-      "price": 84800,
-      "change_pct": -5.46,
-      "price_label": "현재가"
-    },
-    {
-      "rank": 4,
-      "name": "KB금융",
-      "code": "105560",
-      "signal": "중립",
-      "summary": "52주 신고가를 기록한 기업으로 분석 대상에 올랐으며, 비은행 이익 확대가 실적 성장의 핵심 축으로 평가됐다. 국민은행이 강북삼성병원과 시니어 건강 증진 업무협약을 맺는 등 고령층 시장 공략을 강화하고 있다.",
-      "catalyst": "비은행 부문 이익 확대와 시니어 금융 시장 선점 전략이 중장기 성장 동력으로 작용할 전망이다. 이재명 정부의 포용금융 기조 속 중소기업·자영업자 대출 금리 인하가 대출 볼륨 확대로 이어질 수 있다.",
-      "risk": "하반기 금리 인상 우려 재부각 시 금융주 전반에 부담이 가중될 수 있으며, 전일 -6.96%의 큰 폭 하락은 단기 변동성 위험을 보여준다.",
-      "channel_mentions": [
-        {
-          "source_type": "유튜브",
-          "source_name": "체슬리TV",
-          "content": "52주 신고가 기업분석 대상으로 KB금융 포함, 비은행 이익 확대를 핵심 성장 축으로 분석.",
-          "url": "https://www.youtube.com/watch?v=vW3PdTJIjQo"
-        },
-        {
-          "source_type": "뉴스",
-          "source_name": "매일경제",
-          "content": "KB국민은행이 강북삼성병원과 시니어 건강 증진 업무협약 체결, 고령층 금융 서비스 확대.",
-          "url": "https://www.mk.co.kr/news/economy/12102167"
-        }
-      ],
-      "channel_counts": {
-        "유튜브": 1
-      },
-      "total_count": 1,
-      "weighted_score": 2.41,
-      "overlap_count": 1,
-      "reasons": [],
-      "price": 168500,
-      "change_pct": -6.96,
-      "price_label": "현재가"
-    },
-    {
-      "rank": 5,
-      "name": "SK이노베이션",
-      "code": "096770",
-      "signal": "중립",
-      "summary": "미·이란 확전 양상에 국제유가가 4.5% 급등하며 정유 섹터 수혜 기대가 부각됐다. 호르무즈 위기 확대 시 정제마진 개선과 재고 평가이익 등 단기 수혜가 기대된다.",
-      "catalyst": "국제유가 급등과 중동 공급 차질 우려는 정유 업체의 재고 평가이익과 정제마진 개선으로 이어질 수 있다. 중동 리스크 장기화 시 에너지 섹터 투자 매력이 높아질 가능성이 있다.",
-      "risk": "유가 급등이 오히려 석유화학 원가 부담으로 작용할 수 있으며, 중동 사태 해소 시 단기 수혜 모멘텀이 빠르게 소멸될 수 있다.",
-      "channel_mentions": [
-        {
-          "source_type": "경제방송",
-          "source_name": "TomatoTV",
-          "content": "호르무즈 위기 확대 시장 영향 분석에서 SK이노베이션 정유 섹터 수혜주로 언급.",
-          "url": "https://www.youtube.com/watch?v=6XYbbfOaujU"
-        }
-      ],
-      "channel_counts": {
-        "경제방송": 1
-      },
-      "total_count": 1,
-      "weighted_score": 2.41,
-      "overlap_count": 1,
-      "reasons": [],
-      "price": 120000,
-      "change_pct": -1.15,
-      "price_label": "현재가"
-    },
-    {
-      "rank": 6,
       "name": "카카오",
       "code": "035720",
-      "signal": "중립",
-      "summary": "1인 가구 증가와 디지털 금융 플랫폼 수요 확대 흐름 속에서 관심 종목으로 언급됐다. 토스·SBI저축은행 중금리 대출 출시 등 핀테크 경쟁 심화는 카카오 금융 부문에 간접적 영향을 줄 수 있다.",
-      "catalyst": "디지털 플랫폼 기반의 광고·커머스 회복과 카카오페이·카카오뱅크 등 금융 계열사의 성장이 중장기 실적 개선 모멘텀으로 작용할 수 있다. 외국인 QR 결제 서비스 확대 등 디지털 결제 시장 성장도 긍정적이다.",
-      "risk": "핀테크 경쟁 심화와 규제 리스크, 그리고 전반적인 시장 변동성 확대 속 성장주로서의 밸류에이션 부담이 지속될 수 있다.",
-      "channel_mentions": [
-        {
-          "source_type": "유튜브",
-          "source_name": "전인구경제연구소",
-          "content": "1인 가구 증가와 디지털 플랫폼 성장 맥락에서 카카오 관심 종목으로 언급.",
-          "url": "https://www.youtube.com/watch?v=yV_ZDjG8Rl0"
-        }
-      ],
-      "channel_counts": {
-        "유튜브": 1
-      },
-      "total_count": 1,
-      "weighted_score": 2.1,
-      "overlap_count": 1,
-      "reasons": [],
-      "price": 35050,
-      "change_pct": -2.37,
-      "price_label": "현재가"
+      "bucket": "stocks",
+      "step1_price": 35050,
+      "step1_change_pct": -2.37,
+      "morning_price": 35050,
+      "morning_change_pct": 0.0
     },
     {
-      "rank": 7,
-      "name": "삼성전기",
-      "code": "009150",
-      "signal": "긍정",
-      "summary": "하나증권이 BUY 의견과 목표주가 300,000원을 유지하며 MLCC 수요 증가와 수급 우호적 환경으로 상승 사이클 강화를 전망했다. AI 서버와 스마트폰 수요 확대가 MLCC 수급을 개선시키는 구조적 흐름이 지속되고 있다.",
-      "catalyst": "AI 서버 확산에 따른 고용량 MLCC 수요 증가와 공급 측면의 우호적 환경이 동시에 작용하며 상승 사이클이 강화될 전망이다. 빅테크 실적 발표에서 AI 투자 지속 확인 시 추가 모멘텀 강화가 예상된다.",
-      "risk": "중국 AI 쇼크에 따른 AI 투자 심리 위축이 MLCC 수요 전망에 부정적 영향을 줄 수 있으며, 전방 IT 수요 둔화 시 실적 개선 속도가 지연될 수 있다.",
-      "channel_mentions": [
-        {
-          "source_type": "애널리스트",
-          "source_name": "하나증권",
-          "content": "BUY 의견 및 목표주가 300,000원 유지. MLCC 수요 증가와 수급 우호적 환경으로 상승 사이클 강화 예상.",
-          "url": "https://finance.naver.com/research/company_read.naver?nid=94277&page=1"
-        }
-      ],
-      "channel_counts": {
-        "애널리스트": 1
-      },
-      "total_count": 1,
-      "weighted_score": 1.98,
-      "overlap_count": 1,
-      "reasons": [],
-      "price": 1263000,
-      "change_pct": -1.1,
-      "price_label": "현재가"
+      "name": "삼성SDI",
+      "code": "006400",
+      "bucket": "stocks",
+      "step1_price": 401000,
+      "step1_change_pct": -7.71,
+      "morning_price": 401000,
+      "morning_change_pct": 0.0
     },
     {
-      "rank": 8,
-      "name": "삼성생명",
-      "code": "032830",
-      "signal": "긍정",
-      "summary": "한화투자증권은 삼성생명의 2분기 순이익을 8,183억원(+8% YoY)으로 전망하며 연결 자회사의 실적 호조를 기대했다. 은행·금융지주의 시니어·의료 연계 서비스 확대 흐름이 보험 업종에도 긍정적 분위기를 형성하고 있다.",
-      "catalyst": "연결 자회사 실적 호조와 전년 대비 순이익 8% 성장 전망이 실적 가시성을 높인다. 고령화 사회 진전에 따른 보험 수요 구조적 확대가 중장기 성장 동력으로 작용한다.",
-      "risk": "전일 주가가 -9.21%로 큰 폭 하락하며 단기 변동성이 크게 확대됐으며, 금리 인상 우려 재부각 시 보험주 할인율 조정 압력이 발생할 수 있다.",
-      "channel_mentions": [
-        {
-          "source_type": "애널리스트",
-          "source_name": "한화투자증권",
-          "content": "삼성생명 2Q26 순이익 8,183억원(+8% YoY) 전망, 연결 자회사 실적 호조 기대.",
-          "url": "https://finance.naver.com/research/company_read.naver?nid=94280&page=1"
-        }
-      ],
-      "channel_counts": {
-        "애널리스트": 1
-      },
-      "total_count": 1,
-      "weighted_score": 1.89,
-      "overlap_count": 1,
-      "reasons": [],
-      "price": 300500,
-      "change_pct": -9.21,
-      "price_label": "현재가"
+      "name": "KB금융",
+      "code": "105560",
+      "bucket": "stocks",
+      "step1_price": 168800,
+      "step1_change_pct": -6.79,
+      "morning_price": 168800,
+      "morning_change_pct": 0.0
+    },
+    {
+      "name": "HD현대",
+      "code": "329180",
+      "bucket": "stocks",
+      "step1_price": 448500,
+      "step1_change_pct": -7.33,
+      "morning_price": 448500,
+      "morning_change_pct": 0.0
+    },
+    {
+      "name": "두산에너빌리티",
+      "code": "034020",
+      "bucket": "stocks",
+      "step1_price": 64800,
+      "step1_change_pct": -7.03,
+      "morning_price": 64800,
+      "morning_change_pct": 0.0
+    },
+    {
+      "name": "한화에어로스페이스",
+      "code": "012450",
+      "bucket": "stocks",
+      "step1_price": 875000,
+      "step1_change_pct": -7.21,
+      "morning_price": 875000,
+      "morning_change_pct": 0.0
+    },
+    {
+      "name": "LG에너지솔루션",
+      "code": "373220",
+      "bucket": "stocks",
+      "step1_price": 317500,
+      "step1_change_pct": -4.94,
+      "morning_price": 317500,
+      "morning_change_pct": 0.0
+    },
+    {
+      "name": "LG화학",
+      "code": "066570",
+      "bucket": "stocks",
+      "step1_price": 167200,
+      "step1_change_pct": -6.59,
+      "morning_price": 167200,
+      "morning_change_pct": 0.0
     }
   ],
-  "hidden_picks": [
-    {
-      "rank": 1,
-      "name": "현대모비스",
-      "code": "012330",
-      "signal": "중립",
-      "summary": "피지컬 AI 테마의 부상과 함께 현대모비스가 관심 종목으로 부각됐다. 정의선 현대차그룹 회장의 보스턴다이내믹스 지분 확대와 피지컬 AI 가속화 전략이 자동차 부품 계열사인 현대모비스의 수혜 기대를 높이고 있다.",
-      "catalyst": "현대차그룹의 피지컬 AI 및 로보틱스 투자 강화가 현대모비스의 전장·자율주행 부품 수요 확대로 연결될 수 있다. 재건축 단지 로보틱스 인프라 확산 등 새로운 모빌리티 시장 개척도 중장기 성장 동력으로 작용한다.",
-      "risk": "피지컬 AI 테마의 실적 가시화까지는 상당한 시간이 필요하며, 글로벌 자동차 수요 둔화 시 기존 부품 사업의 실적 압력이 발생할 수 있다.",
-      "channel_type": "경제방송",
-      "channel_name": "TomatoTV",
-      "reasons": [
-        {
-          "source_type": "경제방송",
-          "source_name": "TomatoTV",
-          "detail": "코스피 바닥 형성 국면에서 피지컬 AI 테마 관심 종목으로 현대모비스 언급. 현대차그룹의 피지컬 AI 가속화와 연계한 수혜 전망.",
-          "source_url": "https://www.youtube.com/watch?v=AZ1EorJ_VeA"
-        }
-      ],
-      "weighted_score": 1.61,
-      "price": 470500,
-      "change_pct": -2.39,
-      "price_label": "현재가"
-    }
-  ],
-  "ai_strategy": "■ 핵심 시나리오\n중국 AI '키미 K3' 충격으로 반도체 심리적 매도세가 지속되고 있으나, ASML·TSMC·삼성전자·SK하이닉스의 실적은 업황 훼손 없음을 확인해주고 있다. 이번 주 알파벳·인텔 등 빅테크 실적 발표가 AI 투자 서사 지속 여부를 재확인하는 핵심 변수로, 결과에 따라 반도체주의 낙폭 과대 회복 또는 추가 조정이 결정될 가능성이 높다. 단기적으로는 낙폭 과대에 따른 선별적 저가 매수 관점을 유지하되, 실적 발표 전까지 변동성 관리에 집중하는 전략이 유효하다.\n\n■ 섹터 로테이션\n반도체·빅테크 변동성 확대 속에서 정유·에너지(중동 확전·유가 급등 수혜), 방산(중동 리스크 부각), 배터리·ESS(삼성SDI 2Q 흑자전환·ESS 수요 확대), 통신·AI인프라(SK텔레콤 앤트로픽 가치 상승) 순으로 방어적 섹터 로테이션이 진행되고 있다. 반도체 낙폭 과대 인식이 강해질 경우 저가 매수 자금의 반도체 재유입이 예상되며, 빅테크 실적 호조 확인 시 AI 테마 전반으로의 복귀 흐름이 나타날 수 있다.\n\n■ 오늘의 주목 포인트\n• 이번 주 알파벳·인텔 실적 발표: AI 투자 지속 의지 및 데이터센터 수요 전망 확인이 반도체 섹터 방향성을 결정할 핵심 변수\n• 미·이란 확전 여부 및 호르무즈 해협 리스크: 국제유가 추가 급등 시 정유·에너지 섹터 수혜 강화, 인플레이션 우려 재점화에 따른 연준 매파 기조 강화 가능성 동시 경계\n• 중국 AI 기술 진전 속도: 키미 K3 이후 추가 AI 모델 공개 여부와 HBM 수요에 미치는 실질적 영향 모니터링\n• 원화 강세 지속 여부: 달러·원 환율 1,500원 하회 기조가 외국인 수급 개선으로 이어지는지, 수출 기업 실적에 미치는 부정적 영향과의 균형 점검\n\n■ 리스크 시나리오\n• [보통] 빅테크 실적 실망·AI 투자 축소 신호 → 반도체·AI 인프라 비중 일시 축소, 방산·정유 등 실물 수요 기반 섹터로 방어적 이동 및 현금 비중 확대\n• [낮음] 미·이란 전면전 확대·호르무즈 봉쇄 → 정유·에너지·방산 섹터 비중 확대, 글로벌 공급망 리스크 고려해 수출 의존도 낮은 내수주 비중 유지\n• [낮음] 중국 AI 2차 쇼크 및 HBM 수요 가시적 타격 → 반도체 비중 단계적 축소 후 실적 재확인 시점까지 관망, MLCC·전장부품 등 AI 간접 수혜주로 포트폴리오 재편\n• [높음] 빅테크 실적 호조·AI 투자 지속 확인 → 반도체 낙폭 과대 구간 적극 저가 매수, SK하이닉스·삼성전기 등 AI 직간접 수혜주 비중 확대\n\n■ 애널리스트 종합 시각\n신한투자증권은 삼성SDI(2Q 흑자전환, ESS 확대)와 SK텔레콤(앤트로픽 가치 상승)에 대해 매수 의견을 제시했으며, 키움증권은 한화에어로스페이스의 2Q 어닝 서프라이즈와 하반기 수주 개선을 긍정 평가했다. 하나증권은 삼성전기에 대해 MLCC 수급 우호 환경을 근거로 BUY 의견을 유지했고, 한화투자증권은 삼성생명의 2Q 순이익 +8% YoY 성장을 전망했다. 전반적으로 반도체 심리적 매도세는 산업 훼손이 아닌 외부 변수 영향으로 진단하며, 낙폭 과대 구간에서의 선별적 저가 매수를 권고하는 기조가 우세하다.",
-  "market_data": {
-    "kospi": {
-      "value": 6537.31982421875,
-      "change_pct": -4.15,
-      "direction": "down",
-      "is_premarket": false
-    },
-    "kosdaq": {
-      "value": 750.780029296875,
-      "change_pct": -5.19,
-      "direction": "down",
-      "is_premarket": false
-    },
-    "nasdaq": {
-      "value": 25520.240234375,
-      "change_pct": -1.4,
-      "direction": "down",
-      "is_premarket": false
-    },
-    "sp500": {
-      "value": 7457.68994140625,
-      "change_pct": -1.01,
-      "direction": "down",
-      "is_premarket": false
-    },
-    "dow": {
-      "value": 52146.421875,
-      "change_pct": -0.77,
-      "direction": "down",
-      "is_premarket": false
-    },
-    "usd_krw": {
-      "value": 1481.280029296875,
-      "change_pct": 0.16,
-      "direction": "up",
-      "is_premarket": false
-    }
+  "analyst_briefing": {
+    "sector_themes": [
+      {
+        "sector": "건설",
+        "report_count": 2,
+        "narrative": "현대건설에 대해 교보증권과 유진투자증권이 동시에 리포트를 발간하며 건설 섹터에 관심이 집중되고 있습니다. 본업 안정화와 원전 수주 기대감이 주요 관전 포인트입니다."
+      },
+      {
+        "sector": "엔터테인먼트",
+        "report_count": 2,
+        "narrative": "와이지엔터테인먼트에 대해 키움증권과 SK증권이 동시에 커버하며 K-엔터 IP 모멘텀에 주목하고 있습니다. 빅뱅 컴백과 베이비몬스터 활동이 실적 성장의 핵심 동력으로 부각됩니다."
+      }
+    ],
+    "stocks": [
+      {
+        "name": "현대건설",
+        "category": "simultaneous",
+        "brokers": [
+          "교보증권",
+          "유진투자증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "오늘 교보증권과 유진투자증권이 현대건설에 대해 동시에 리포트를 내놓으며 시장의 주목을 받고 있습니다. 두 증권사 모두 2Q26 매출은 7.1조 원으로 전년 대비 7.8% 감소, 영업이익은 1,898억 원으로 12.5% 줄어들 것으로 전망하고 있습니다. 다만 매출총이익률(GPM)이 6%대를 회복하며 본업 안정화가 진행 중이라는 점은 긍정적인 신호로 해석됩니다. 여기에 원전 수주 기대감까지 더해지면서, 단기 실적 감소에도 불구하고 중장기 모멘텀에 대한 기대가 유효하다는 평가입니다."
+      },
+      {
+        "name": "와이지엔터테인먼트",
+        "category": "simultaneous",
+        "brokers": [
+          "키움증권",
+          "SK증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "키움증권과 SK증권이 나란히 와이지엔터테인먼트 리포트를 발간하며 엔터 섹터에서 가장 뜨거운 종목으로 떠올랐습니다. 두 증권사는 빅뱅의 귀환과 베이비몬스터의 활발한 IP 활동을 핵심 성장 동력으로 지목하며, 2분기 매출액이 전년 대비 25.1% 증가할 것으로 내다봤습니다. 검증된 레거시 IP인 빅뱅과 차세대 IP 베이비몬스터가 동시에 활동하는 구간이 도래했다는 점에서, IP 포트폴리오의 다각화가 실적 성장으로 직결되는 시기라는 분석입니다. 복수의 증권사가 동시에 주목한 만큼 시장의 관심이 집중될 가능성이 높아 보입니다."
+      }
+    ]
   },
+  "ai_strategy_update": "오늘 아침 제시한 전략에 더해, 신규 리포트를 반영해 두 가지 포인트가 보강됩니다. 현대건설은 2Q26 매출과 영업이익이 각각 전년 대비 7.8%, 12.5% 감소할 것으로 전망되나, GPM이 6%대를 회복하며 본업 수익성이 안정화 궤도에 진입하고 있다는 점은 건설 섹터 내 선별적 접근의 근거로 추가됩니다. 다만 외형 성장보다 마진 회복에 초점을 맞춘 실적 구조인 만큼, 단기 모멘텀보다는 GPM 개선 추세의 지속성을 확인하며 접근하는 것이 적절합니다. 와이지엔터테인먼트는 빅뱅과 베이비몬스터의 IP 활동 확대로 2분기 매출액이 전년 대비 25.1% 증가할 것으로 예상되며, 아침 전략에서 별도로 언급되지 않았던 엔터테인먼트 섹터가 지정학 리스크와 무관한 내수 소비·IP 테마로서 단기 주목 대상에 추가됩니다. 전반적인 섹터 로테이션 흐름과 리스크 시나리오는 아침 전략을 유지하되, 건설과 엔터테인먼트를 각각 마진 회복 모니터링 종목과 비지정학 성장 테마 후보군으로 편입해 관찰하는 방향으로 보강합니다.",
   "brokerage_reports": {
     "simultaneous": [
       {
@@ -425,9 +161,9 @@
         "title": "2Q26 Preview: 본업안정 진행중, 원전 기대중",
         "opinion": "",
         "target_price": "",
-        "ai_summary": "2Q26 매출 7.1조(YoY -7.8%), 영업이익 1,898억(YoY -12.5%) 전망이나 GPM 6%대 회복으로 본업이 안정화되고 있다.",
+        "ai_summary": "2Q26 매출 7.1조(YoY -7.8%), 영업이익 1,898억(YoY -12.5%) 전망이나 GPM 6%대 회복으로 본업 안정화 진행 중.",
         "date": "26.07.20",
-        "report_day": "today"
+        "report_day": "yesterday"
       },
       {
         "stock_name": "와이지엔터테인먼트",
@@ -438,12 +174,50 @@
         "title": "빅뱅의 귀환과 차세대 IP의 증명 시간",
         "opinion": "",
         "target_price": "",
-        "ai_summary": "빅뱅 복귀와 블랙핑크 활동으로 핵심 IP 매출 확대가 기대되나, 2분기 영업이익은 전년 대비 24% 감소가 예상된다.",
+        "ai_summary": "빅뱅과 베이비몬스터의 활발한 IP 활동으로 2분기 매출액은 전년 대비 25.1% 증가가 예상된다.",
         "date": "26.07.20",
-        "report_day": "today"
+        "report_day": "yesterday"
       }
     ],
     "new_coverage": [],
     "single_significant": []
+  },
+  "market_data": {
+    "kospi": {
+      "value": 6516.27,
+      "change_pct": -4.46,
+      "direction": "down",
+      "is_premarket": true
+    },
+    "kosdaq": {
+      "value": 749.64,
+      "change_pct": -5.33,
+      "direction": "down",
+      "is_premarket": true
+    },
+    "nasdaq": {
+      "value": 25508.072265625,
+      "change_pct": -0.05,
+      "direction": "down",
+      "is_premarket": false
+    },
+    "sp500": {
+      "value": 7443.27978515625,
+      "change_pct": -0.19,
+      "direction": "down",
+      "is_premarket": false
+    },
+    "dow": {
+      "value": 51839.26171875,
+      "change_pct": -0.59,
+      "direction": "down",
+      "is_premarket": false
+    },
+    "usd_krw": {
+      "value": 1475.489990234375,
+      "change_pct": -0.8,
+      "direction": "down",
+      "is_premarket": false
+    }
   }
 }
