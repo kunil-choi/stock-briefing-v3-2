@@ -70,6 +70,7 @@ def build_step1_recap(step1_data: dict) -> dict:
         "market_leaders":      _names("market_leaders"),
         "stocks":              _names("stocks"),
         "market_summary_gist": gist,
+        "generated_at":        step1_data.get("generated_at", ""),
     }
 
 
@@ -111,13 +112,18 @@ _ANALYST_BRIEFING_PROMPT = """
 1. sector_themes: 리포트가 여러 종목·섹터에 몰려있으면 섹터별 테마로 묶어
    2~4개 작성(예: "반도체 섹터에 리포트 5건 집중"). 뚜렷한 테마가 없으면
    빈 배열로 두세요.
-2. stocks: 각 종목마다 3~4문장 분량의 심화 분석을 작성하세요. 증권사명·
-   투자의견·목표주가를 자연스럽게 문장에 녹이되, 제공된 ai_summary/title
-   외의 수치나 전망을 새로 지어내지 마세요.
+2. stocks: [리포트 데이터]에 있는 종목은 하나도 빠짐없이 전부 stocks 배열에
+   포함하세요. 이 브리핑은 최소 10개 종목(또는 섹터)을 노출해야 하므로
+   분량을 줄이려고 임의로 종목을 생략하지 마세요. 각 종목마다 3~4문장
+   분량의 심화 분석을 작성하세요. 증권사명·투자의견·목표주가를 자연스럽게
+   문장에 녹이되, 제공된 ai_summary/title 외의 수치나 전망을 새로 지어내지
+   마세요.
 3. category가 "simultaneous"(여러 증권사 동시언급)인 종목은 특히 강조해서
    작성하세요.
-4. category가 "single_significant"(단독 리포트지만 주목할 만한 종목)인
-   종목은 "오늘의 픽"으로 소개하는 어조로 작성하세요.
+4. category가 "single_significant"(단독 리포트)인 종목은, 목표주가 상향
+   등으로 특히 주목할 만하면 "오늘의 픽"으로 소개하고, 그 정도는 아니어도
+   리포트 내용 중 실질적으로 유의미한 포인트(투자의견·목표주가·핵심 논리)를
+   짚어 소개하는 어조로 작성하세요.
 5. 순수 JSON만 출력하고 설명문·마크다운 코드블록은 넣지 마세요.
 
 [리포트 데이터]
