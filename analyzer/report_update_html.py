@@ -46,18 +46,20 @@ def _render_recap(recap: dict) -> str:
     gist_html = f'<p style="color:#adb5bd;margin-top:.5rem;">{_he.escape(gist)}</p>' if gist else ""
     return f"""
 <div class="section">
-  <div class="section-title">📌 오늘 아침(STEP-1) 리캡</div>
+  <div class="section-title">📌 유튜브 분석 브리핑 요약</div>
   <div class="recap-row"><b>대형주도주</b> {_chips(recap.get('market_leaders'))}</div>
   <div class="recap-row"><b>관심종목</b> {_chips(recap.get('stocks'))}</div>
   {gist_html}
 </div>"""
 
 
-def _render_reaction(reaction: list) -> str:
+def _render_reaction(reaction: list, before_time: str = "", after_time: str = "") -> str:
+    before_label = f"개장 전 {before_time} 현재" if before_time else "개장 전 현재"
+    after_label  = f"개장 후 {after_time} 현재" if after_time else "개장 후 현재"
     if not reaction:
         return """
 <div class="section">
-  <div class="section-title">📈 오전장 반응 업데이트</div>
+  <div class="section-title">📈 개장 전후 주요 종목 주가 변동</div>
   <p style="color:#666;">데이터 없음</p>
 </div>"""
     rows = ""
@@ -70,9 +72,9 @@ def _render_reaction(reaction: list) -> str:
     </tr>"""
     return f"""
 <div class="section">
-  <div class="section-title">📈 오전장 반응 업데이트</div>
+  <div class="section-title">📈 개장 전후 주요 종목 주가 변동</div>
   <table class="reaction-table">
-    <tr><th>종목</th><th>STEP-1 시점</th><th>오전장 현재</th></tr>
+    <tr><th>종목</th><th>{_he.escape(before_label)}</th><th>{_he.escape(after_label)}</th></tr>
     {rows}
   </table>
 </div>"""
@@ -170,12 +172,12 @@ body { background:#0d1117; color:#e6edf3; font-family:'Pretendard','Apple SD Got
 <body>
 <div class="container">
   <div class="header">
-    <h1>📡 장중 업데이트 (report_update)</h1>
+    <h1>📡 증권사 리포트 핵심 브리핑</h1>
     <div class="subtitle">{briefing_date} · 생성 시각 {generated_at} KST</div>
     <div class="tier-badge" style="background:{tier_color}22;color:{tier_color};border:1px solid {tier_color}55;">{tier_label}</div>
   </div>
   {_render_recap(data.get('step1_recap', {}))}
-  {_render_reaction(data.get('morning_reaction', []))}
+  {_render_reaction(data.get('morning_reaction', []), data.get('step1_recap', {}).get('generated_at', ''), generated_at)}
   {_render_briefing(data.get('analyst_briefing', {}))}
   {_render_strategy_update(data.get('ai_strategy_update', ''))}
   <div class="disclaimer">

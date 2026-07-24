@@ -890,6 +890,14 @@ def _restore_source_url(item: dict, all_data: list) -> None:
 # briefing_data.json에는 저장되지 않아, 영상 스크립트 생성 단계에서
 # 증권사 리포트 내용이 통째로 유실되고 있었다.)
 
+# 증권사 리포트 브리핑 최소 노출 종목 수. 동시언급+신규커버리지+규칙기반
+# 유의미 단독언급(significance_reason)만으로는 동시언급이 적은 날 3개 안팎까지
+# 떨어져 STEP-2 영상 분량이 부족해지는 문제가 있었다(2026-07-24 실측). 그런
+# 날엔 ai_summary가 실제로 채워진(=본문에서 유의미한 내용을 추출해낸) 단독언급
+# 리포트로 부족분을 채워 최소 개수를 보장한다.
+MIN_BROKERAGE_STOCKS = 10
+
+
 def build_brokerage_reports(all_data: list) -> dict:
     reports = [d for d in all_data if d.get("source_type") == "애널리스트"]
 
@@ -909,13 +917,47 @@ def build_brokerage_reports(all_data: list) -> dict:
             })
         return out
 
-    return {
-        "simultaneous":  _pick([r for r in reports if r.get("analyst_category") == "simultaneous"]),
-        "new_coverage":  _pick([r for r in reports if r.get("analyst_category") == "new_coverage"]),
-        "single_significant": _pick([
+    simultaneous = [r for r in reports if r.get("analyst_category") == "simultaneous"]
+    new_coverage = [r for r in reports if r.get("analyst_category") == "new_coverage"]
+    rule_significant = [
+        r for r in reports
+        if r.get("analyst_category") == "single_broker" and r.get("significance_reason")
+    ]
+
+    covered_names = {r.get("stock_name", "") for r in simultaneous + new_coverage + rule_significant}
+    shortfall = MIN_BROKERAGE_STOCKS - len(covered_names)
+
+    single_significant = rule_significant
+    if shortfall > 0:
+        candidates = [
             r for r in reports
-            if r.get("analyst_category") == "single_broker" and r.get("significance_reason")
-        ]),
+            if r.get("analyst_category") == "single_broker"
+            and not r.get("significance_reason")
+            and r.get("stock_name", "") not in covered_names
+        ]
+        # ai_summary(실제 본문 요약) > target_price > opinion 순으로, 리포트
+        # 내용을 실질적으로 확인할 수 있는 종목을 우선 채운다.
+        candidates.sort(key=lambda r: (
+            0 if r.get("ai_summary") else 1,
+            0 if r.get("target_price") else 1,
+            0 if r.get("opinion") else 1,
+        ))
+        filler = []
+        for r in candidates:
+            name = r.get("stock_name", "")
+            if name in covered_names:
+                continue
+            r["significance_reason"] = "리포트 실질 내용 확인"
+            filler.append(r)
+            covered_names.add(name)
+            if len(filler) >= shortfall:
+                break
+        single_significant = rule_significant + filler
+
+    return {
+        "simultaneous":       _pick(simultaneous),
+        "new_coverage":       _pick(new_coverage),
+        "single_significant": _pick(single_significant),
     }
 
 
