@@ -24,6 +24,25 @@ _CATEGORY_META = {
     "single_significant":  {"color": "#f06595", "badge": "💎 오늘의 픽"},
 }
 
+# SIMUL-CAP-1: 동시언급 종목이 20개를 넘는 날이 있어(가독성 저하) 동시
+# 언급한 증권사 수가 많은 순으로 상위 N개만 노출한다.
+_SIMULTANEOUS_LIMIT = 10
+# TODAY-PICK-1: 캡에서 잘려나간 동시언급 종목 중 투자의견이 뚜렷하게
+# 긍정적인 종목은 버리지 않고 "오늘의 픽"으로 승격시킨다 — ai_analyzer.py의
+# _POSITIVE_OPINION_KEYWORDS와 동일한 기준.
+_POSITIVE_OPINION_KEYWORDS = {
+    "매수", "buy", "강력매수", "strong buy", "비중확대", "overweight",
+    "outperform", "시장수익률상회", "적극매수",
+}
+_TODAY_PICK_LIMIT = 3
+
+
+def _is_positive_opinion(opinion) -> bool:
+    if not opinion:
+        return False
+    o = str(opinion).strip().lower()
+    return any(k in o for k in _POSITIVE_OPINION_KEYWORDS)
+
 
 def _pct_html(pct) -> str:
     try:
@@ -80,26 +99,14 @@ def _render_reaction(reaction: list, before_time: str = "", after_time: str = ""
 </div>"""
 
 
-def _render_briefing(briefing: dict) -> str:
-    themes = briefing.get("sector_themes", [])
-    stocks = briefing.get("stocks", [])
-
-    themes_html = ""
-    for t in themes:
-        themes_html += (
-            f'<div class="theme-badge">🎯 {_he.escape(t.get("sector",""))} '
-            f'({t.get("report_count",0)}건) — {_he.escape(t.get("narrative",""))}</div>'
-        )
-
-    cards = ""
-    for s in stocks:
-        cat = s.get("category", "single_significant")
-        meta = _CATEGORY_META.get(cat, _CATEGORY_META["single_significant"])
-        brokers = s.get("brokers", [])
-        brokers_str = ", ".join(brokers) if isinstance(brokers, list) else str(brokers)
-        badge = (f'<span class="cat-badge" style="background:{meta["color"]}22;'
-                 f'color:{meta["color"]};">{meta["badge"]}</span>') if meta["badge"] else ""
-        cards += f"""
+def _stock_card_html(s: dict, cat_override: str = None) -> str:
+    cat = cat_override or s.get("category", "single_significant")
+    meta = _CATEGORY_META.get(cat, _CATEGORY_META["single_significant"])
+    brokers = s.get("brokers", [])
+    brokers_str = ", ".join(brokers) if isinstance(brokers, list) else str(brokers)
+    badge = (f'<span class="cat-badge" style="background:{meta["color"]}22;'
+             f'color:{meta["color"]};">{meta["badge"]}</span>') if meta["badge"] else ""
+    return f"""
 <div class="stock-card" style="border-left-color:{meta['color']};">
   <div class="stock-card-header">
     <b>{_he.escape(s.get('name',''))}</b>
@@ -112,6 +119,60 @@ def _render_briefing(briefing: dict) -> str:
   </div>
   <p style="color:#e6edf3;font-size:.9rem;margin-top:.5rem;">{_he.escape(s.get('analysis',''))}</p>
 </div>"""
+
+
+def _subsection_title(text: str, color: str) -> str:
+    return (f'<div class="rpt-subsection-title" style="border-left-color:{color};'
+            f'color:{color};">{text}</div>')
+
+
+def _render_briefing(briefing: dict) -> str:
+    themes = briefing.get("sector_themes", [])
+    stocks = briefing.get("stocks", [])
+
+    themes_html = ""
+    for t in themes:
+        themes_html += (
+            f'<div class="theme-badge">🎯 {_he.escape(t.get("sector",""))} '
+            f'({t.get("report_count",0)}건) — {_he.escape(t.get("narrative",""))}</div>'
+        )
+
+    simultaneous = [s for s in stocks if s.get("category") == "simultaneous"]
+    new_coverage = [s for s in stocks if s.get("category") == "new_coverage"]
+    picks        = [s for s in stocks if s.get("category") not in ("simultaneous", "new_coverage")]
+
+    # SIMUL-CAP-1: 동시언급 종목이 너무 많으면(예: 26개) 한눈에 보기 어려워
+    # 동시 언급한 증권사 수가 많은 순으로 상위 _SIMULTANEOUS_LIMIT개만 보여준다.
+    simultaneous_sorted = sorted(
+        simultaneous, key=lambda s: len(s.get("brokers") or []), reverse=True
+    )
+    simultaneous_top      = simultaneous_sorted[:_SIMULTANEOUS_LIMIT]
+    simultaneous_overflow = simultaneous_sorted[_SIMULTANEOUS_LIMIT:]
+
+    # TODAY-PICK-1: 캡에서 빠진 동시언급 종목 중 투자의견이 긍정적인 종목은
+    # "오늘의 픽" 후보로 승격 — 원래 있던 픽(single_significant)과 합쳐
+    # 증권사 수가 많은(더 확신도 높은) 순으로 최종 _TODAY_PICK_LIMIT개만 노출.
+    promoted = sorted(
+        (s for s in simultaneous_overflow if _is_positive_opinion(s.get("opinion"))),
+        key=lambda s: len(s.get("brokers") or []), reverse=True,
+    )
+    picks_final = (picks + promoted)[:_TODAY_PICK_LIMIT]
+
+    cards = ""
+    if simultaneous_top:
+        cards += _subsection_title(
+            f"🔥 동시언급 상위 {len(simultaneous_top)}개 (증권사 수 순)", "#ff922b"
+        )
+        for s in simultaneous_top:
+            cards += _stock_card_html(s, "simultaneous")
+    if new_coverage:
+        cards += _subsection_title("🆕 신규 커버리지", "#51cf66")
+        for s in new_coverage:
+            cards += _stock_card_html(s, "new_coverage")
+    if picks_final:
+        cards += _subsection_title("💎 오늘의 픽", "#f06595")
+        for s in picks_final:
+            cards += _stock_card_html(s, "single_significant")
 
     if not cards:
         cards = '<p style="color:#666;">오늘 리포트 데이터 없음</p>'
@@ -196,6 +257,7 @@ body { background:#0d1117; color:#e6edf3; font-family:'Pretendard','Apple SD Got
 .reaction-table { width:100%; border-collapse:collapse; font-size:.88rem; }
 .reaction-table th, .reaction-table td { text-align:left; padding:.5rem .6rem; border-bottom:1px solid #30363d; }
 .theme-badge { background:#21262d; border-radius:8px; padding:.5rem .8rem; margin-bottom:.5rem; font-size:.88rem; color:#ffd43b; }
+.rpt-subsection-title { font-size:.85rem; font-weight:700; margin:1rem 0 .5rem; padding-left:.5rem; border-left:3px solid; }
 .stock-card { background:#161b22; border:1px solid #30363d; border-left-width:3px; border-radius:8px; padding:.85rem 1rem; margin-bottom:.75rem; }
 .stock-card-header { display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; }
 .cat-badge { font-size:.7rem; padding:.15rem .5rem; border-radius:4px; font-weight:700; }
