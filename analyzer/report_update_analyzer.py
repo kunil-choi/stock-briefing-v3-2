@@ -117,7 +117,11 @@ _ANALYST_BRIEFING_PROMPT = """
    분량을 줄이려고 임의로 종목을 생략하지 마세요. 각 종목마다 3~4문장
    분량의 심화 분석을 작성하세요. 증권사명·투자의견·목표주가를 자연스럽게
    문장에 녹이되, 제공된 ai_summary/title 외의 수치나 전망을 새로 지어내지
-   마세요.
+   마세요. 입력 데이터의 opinion/target_price 값이 비어있지 않다면 출력
+   stocks[].opinion / stocks[].target_price에도 반드시 그 값을 그대로
+   채우세요 — 문장에 녹였다고 해서 이 구조화된 필드를 비워두면 안 됩니다.
+   같은 종목의 리포트가 여러 건이라 값이 다르면 그중 가장 최근/명확한
+   값을 채우세요. 값 자체가 없으면 빈 문자열로 두세요.
 3. category가 "simultaneous"(여러 증권사 동시언급)인 종목은 특히 강조해서
    작성하세요.
 4. category가 "single_significant"(단독 리포트)인 종목은, 목표주가 상향
@@ -179,6 +183,35 @@ def _fallback_briefing(all_reports: list) -> dict:
     }
 
 
+def _backfill_opinion_target(stocks: list, all_reports: list) -> list:
+    """
+    Claude가 투자의견·목표주가를 분석 문장 속에만 녹이고 구조화된
+    opinion/target_price 필드는 비워두는 경우가 있다 — 그 결과 리포트에
+    실제로 해당 정보가 있는데도 카드에는 "-"로 표시되는 문제가 있었다.
+    원본 리포트 데이터(all_reports)에 같은 종목명으로 값이 있으면 그대로
+    채워 넣어, 프롬프트 준수 여부와 무관하게 항상 표시되도록 보장한다.
+    """
+    by_name = {}
+    for r in all_reports:
+        name = r.get("stock_name", "")
+        if name:
+            by_name.setdefault(name, []).append(r)
+
+    for s in stocks:
+        candidates = by_name.get(s.get("name", ""), [])
+        if not (s.get("opinion") or "").strip():
+            for r in candidates:
+                if (r.get("opinion") or "").strip():
+                    s["opinion"] = r["opinion"]
+                    break
+        if not (s.get("target_price") or "").strip():
+            for r in candidates:
+                if (r.get("target_price") or "").strip():
+                    s["target_price"] = r["target_price"]
+                    break
+    return stocks
+
+
 def build_analyst_briefing(brokerage_reports: dict, api_key: str) -> dict:
     from .ai_analyzer import _try_parse_json
 
@@ -204,6 +237,7 @@ def build_analyst_briefing(brokerage_reports: dict, api_key: str) -> dict:
         return _fallback_briefing(all_reports)
 
     result.setdefault("sector_themes", [])
+    result["stocks"] = _backfill_opinion_target(result.get("stocks", []), all_reports)
     return result
 
 
