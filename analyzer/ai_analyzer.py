@@ -898,6 +898,34 @@ def _restore_source_url(item: dict, all_data: list) -> None:
 MIN_BROKERAGE_STOCKS = 10
 
 
+def _broker_details(r: dict) -> list:
+    """동시언급 종목은 증권사별로 투자의견·목표주가가 다를 수 있어, 하나로
+    합쳐진 opinion/target_price와 별개로 증권사별 원본 값을 보존한다."""
+    sub_reports = r.get("all_reports")
+    if sub_reports:
+        by_broker = {}
+        for sr in sub_reports:
+            broker = sr.get("source_name", "")
+            if not broker or broker in by_broker:
+                continue
+            by_broker[broker] = {
+                "broker":       broker,
+                "opinion":      sr.get("opinion", ""),
+                "target_price": sr.get("target_price", ""),
+            }
+        order = r.get("simultaneous_brokers") or list(by_broker.keys())
+        return [by_broker[b] for b in order if b in by_broker]
+
+    broker = r.get("source_name", "")
+    if not broker:
+        return []
+    return [{
+        "broker":       broker,
+        "opinion":      r.get("opinion", ""),
+        "target_price": r.get("target_price", ""),
+    }]
+
+
 def build_brokerage_reports(all_data: list) -> dict:
     reports = [d for d in all_data if d.get("source_type") == "애널리스트"]
 
@@ -914,6 +942,7 @@ def build_brokerage_reports(all_data: list) -> dict:
                 "ai_summary": r.get("ai_summary", ""),
                 "date":       r.get("date", ""),
                 "report_day": r.get("report_day", "today"),
+                "broker_details": _broker_details(r),
             })
         return out
 

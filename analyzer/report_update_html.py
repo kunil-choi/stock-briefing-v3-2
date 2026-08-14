@@ -54,49 +54,25 @@ def _pct_html(pct) -> str:
     return f'<span style="color:{color};">{arrow} {p:+.2f}%</span>'
 
 
-def _render_recap(recap: dict) -> str:
-    def _chips(names):
-        if not names:
-            return '<span style="color:#666;">없음</span>'
-        return " ".join(
-            f'<span class="chip">{_he.escape(n)}</span>' for n in names
-        )
-    gist = recap.get("market_summary_gist", "")
-    gist_html = f'<p style="color:#adb5bd;margin-top:.5rem;">{_he.escape(gist)}</p>' if gist else ""
-    return f"""
-<div class="section">
-  <div class="section-title">📌 유튜브 분석 브리핑 요약</div>
-  <div class="recap-row"><b>대형주도주</b> {_chips(recap.get('market_leaders'))}</div>
-  <div class="recap-row"><b>관심종목</b> {_chips(recap.get('stocks'))}</div>
-  {gist_html}
-</div>"""
-
-
-def _render_reaction(reaction: list, before_time: str = "", after_time: str = "") -> str:
-    before_label = f"개장 전 {before_time} 현재" if before_time else "개장 전 현재"
-    after_label  = f"개장 후 {after_time} 현재" if after_time else "개장 후 현재"
-    if not reaction:
-        return """
-<div class="section">
-  <div class="section-title">📈 개장 전후 주요 종목 주가 변동</div>
-  <p style="color:#666;">데이터 없음</p>
-</div>"""
+def _broker_opinions_html(details: list) -> str:
+    """증권사별 투자의견·목표주가를 증권사명과 함께 한 줄씩 나열한다 —
+    동시언급 종목은 증권사마다 의견/목표가가 다를 수 있어 하나로 합쳐
+    보여주면 정보가 유실된다."""
     rows = ""
-    for r in reaction:
-        rows += f"""
-    <tr>
-      <td>{_he.escape(r.get('name',''))}</td>
-      <td>{r.get('step1_price',0):,}원 {_pct_html(r.get('step1_change_pct',0))}</td>
-      <td>{r.get('morning_price',0):,}원 {_pct_html(r.get('morning_change_pct',0))}</td>
-    </tr>"""
-    return f"""
-<div class="section">
-  <div class="section-title">📈 개장 전후 주요 종목 주가 변동</div>
-  <table class="reaction-table">
-    <tr><th>종목</th><th>{_he.escape(before_label)}</th><th>{_he.escape(after_label)}</th></tr>
-    {rows}
-  </table>
-</div>"""
+    for d in details:
+        broker = d.get("broker", "")
+        if not broker:
+            continue
+        opinion      = d.get("opinion", "") or "-"
+        target_price = d.get("target_price", "")
+        target_str   = f"{target_price}원" if target_price else "-"
+        rows += (
+            f'<div style="display:flex;justify-content:space-between;gap:.75rem;">'
+            f'<span>{_he.escape(broker)}</span>'
+            f'<span>{_he.escape(opinion)} · {_he.escape(target_str)}</span>'
+            f'</div>'
+        )
+    return rows
 
 
 def _stock_card_html(s: dict, cat_override: str = None) -> str:
@@ -106,6 +82,17 @@ def _stock_card_html(s: dict, cat_override: str = None) -> str:
     brokers_str = ", ".join(brokers) if isinstance(brokers, list) else str(brokers)
     badge = (f'<span class="cat-badge" style="background:{meta["color"]}22;'
              f'color:{meta["color"]};">{meta["badge"]}</span>') if meta["badge"] else ""
+
+    broker_rows = _broker_opinions_html(s.get("broker_details") or [])
+    opinions_html = (
+        f'<div style="color:#adb5bd;font-size:.85rem;margin-top:.3rem;'
+        f'display:flex;flex-direction:column;gap:.2rem;">{broker_rows}</div>'
+        if broker_rows else
+        f'<div style="color:#adb5bd;font-size:.85rem;margin-top:.3rem;">'
+        f"투자의견: {_he.escape(s.get('opinion','') or '-')} · "
+        f"목표주가: {_he.escape(s.get('target_price','') or '-')}원</div>"
+    )
+
     return f"""
 <div class="stock-card" style="border-left-color:{meta['color']};">
   <div class="stock-card-header">
@@ -113,10 +100,7 @@ def _stock_card_html(s: dict, cat_override: str = None) -> str:
     <span style="color:#868e96;">🏦 {_he.escape(brokers_str)}</span>
     {badge}
   </div>
-  <div style="color:#adb5bd;font-size:.85rem;margin-top:.3rem;">
-    투자의견: {_he.escape(s.get('opinion','') or '-')} ·
-    목표주가: {_he.escape(s.get('target_price','') or '-')}원
-  </div>
+  {opinions_html}
   <p style="color:#e6edf3;font-size:.9rem;margin-top:.5rem;">{_he.escape(s.get('analysis',''))}</p>
 </div>"""
 
@@ -252,10 +236,6 @@ body { background:#0d1117; color:#e6edf3; font-family:'Pretendard','Apple SD Got
 @media (max-width:600px) { .video-thumb{width:110px;} .video-title{font-size:.88rem;} }
 .section { margin-bottom:2.2rem; }
 .section-title { font-size:1.1rem; font-weight:700; border-left:4px solid #58a6ff; padding-left:.75rem; margin-bottom:1rem; }
-.recap-row { margin-bottom:.5rem; font-size:.92rem; }
-.chip { display:inline-block; background:#21262d; border:1px solid #30363d; border-radius:14px; padding:.15rem .7rem; margin:.15rem .2rem; font-size:.85rem; color:#58a6ff; }
-.reaction-table { width:100%; border-collapse:collapse; font-size:.88rem; }
-.reaction-table th, .reaction-table td { text-align:left; padding:.5rem .6rem; border-bottom:1px solid #30363d; }
 .theme-badge { background:#21262d; border-radius:8px; padding:.5rem .8rem; margin-bottom:.5rem; font-size:.88rem; color:#ffd43b; }
 .rpt-subsection-title { font-size:.85rem; font-weight:700; margin:1rem 0 .5rem; padding-left:.5rem; border-left:3px solid; }
 .stock-card { background:#161b22; border:1px solid #30363d; border-left-width:3px; border-radius:8px; padding:.85rem 1rem; margin-bottom:.75rem; }
@@ -280,8 +260,6 @@ body { background:#0d1117; color:#e6edf3; font-family:'Pretendard','Apple SD Got
     <div class="tier-badge" style="background:{tier_color}22;color:{tier_color};border:1px solid {tier_color}55;">{tier_label}</div>
   </div>
   {video_html}
-  {_render_recap(data.get('step1_recap', {}))}
-  {_render_reaction(data.get('morning_reaction', []), data.get('step1_recap', {}).get('generated_at', ''), generated_at)}
   {_render_briefing(data.get('analyst_briefing', {}))}
   {_render_strategy_update(data.get('ai_strategy_update', ''))}
   <div class="disclaimer">
