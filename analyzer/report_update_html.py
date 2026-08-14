@@ -54,6 +54,27 @@ def _pct_html(pct) -> str:
     return f'<span style="color:{color};">{arrow} {p:+.2f}%</span>'
 
 
+def _broker_opinions_html(details: list) -> str:
+    """증권사별 투자의견·목표주가를 증권사명과 함께 한 줄씩 나열한다 —
+    동시언급 종목은 증권사마다 의견/목표가가 다를 수 있어 하나로 합쳐
+    보여주면 정보가 유실된다."""
+    rows = ""
+    for d in details:
+        broker = d.get("broker", "")
+        if not broker:
+            continue
+        opinion      = d.get("opinion", "") or "-"
+        target_price = d.get("target_price", "")
+        target_str   = f"{target_price}원" if target_price else "-"
+        rows += (
+            f'<div style="display:flex;justify-content:space-between;gap:.75rem;">'
+            f'<span>{_he.escape(broker)}</span>'
+            f'<span>{_he.escape(opinion)} · {_he.escape(target_str)}</span>'
+            f'</div>'
+        )
+    return rows
+
+
 def _stock_card_html(s: dict, cat_override: str = None) -> str:
     cat = cat_override or s.get("category", "single_significant")
     meta = _CATEGORY_META.get(cat, _CATEGORY_META["single_significant"])
@@ -61,6 +82,17 @@ def _stock_card_html(s: dict, cat_override: str = None) -> str:
     brokers_str = ", ".join(brokers) if isinstance(brokers, list) else str(brokers)
     badge = (f'<span class="cat-badge" style="background:{meta["color"]}22;'
              f'color:{meta["color"]};">{meta["badge"]}</span>') if meta["badge"] else ""
+
+    broker_rows = _broker_opinions_html(s.get("broker_details") or [])
+    opinions_html = (
+        f'<div style="color:#adb5bd;font-size:.85rem;margin-top:.3rem;'
+        f'display:flex;flex-direction:column;gap:.2rem;">{broker_rows}</div>'
+        if broker_rows else
+        f'<div style="color:#adb5bd;font-size:.85rem;margin-top:.3rem;">'
+        f"투자의견: {_he.escape(s.get('opinion','') or '-')} · "
+        f"목표주가: {_he.escape(s.get('target_price','') or '-')}원</div>"
+    )
+
     return f"""
 <div class="stock-card" style="border-left-color:{meta['color']};">
   <div class="stock-card-header">
@@ -68,10 +100,7 @@ def _stock_card_html(s: dict, cat_override: str = None) -> str:
     <span style="color:#868e96;">🏦 {_he.escape(brokers_str)}</span>
     {badge}
   </div>
-  <div style="color:#adb5bd;font-size:.85rem;margin-top:.3rem;">
-    투자의견: {_he.escape(s.get('opinion','') or '-')} ·
-    목표주가: {_he.escape(s.get('target_price','') or '-')}원
-  </div>
+  {opinions_html}
   <p style="color:#e6edf3;font-size:.9rem;margin-top:.5rem;">{_he.escape(s.get('analysis',''))}</p>
 </div>"""
 

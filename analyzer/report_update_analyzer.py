@@ -161,6 +161,7 @@ def _flatten_reports(brokerage_reports: dict) -> list:
                 "opinion":      r.get("opinion", ""),
                 "target_price": r.get("target_price", ""),
                 "ai_summary":   r.get("ai_summary", ""),
+                "broker_details": r.get("broker_details", []),
             })
     return all_reports
 
@@ -177,6 +178,7 @@ def _fallback_briefing(all_reports: list) -> dict:
                 "opinion":      r["opinion"],
                 "target_price": r["target_price"],
                 "analysis":     r["ai_summary"] or r["title"],
+                "broker_details": r["broker_details"],
             }
             for r in all_reports
         ],
@@ -212,6 +214,22 @@ def _backfill_opinion_target(stocks: list, all_reports: list) -> list:
     return stocks
 
 
+def _backfill_broker_details(stocks: list, all_reports: list) -> list:
+    """Claude 출력 스키마에는 broker_details가 없으므로(문장으로만 녹임),
+    원본 리포트 데이터의 증권사별 투자의견·목표주가를 이름 매칭으로 채워
+    넣어 동시언급 종목에서 "어느 증권사가 어떤 의견/목표가를 냈는지"를
+    카드에 그대로 표시할 수 있게 한다."""
+    by_name = {}
+    for r in all_reports:
+        name = r.get("stock_name", "")
+        if name and name not in by_name:
+            by_name[name] = r.get("broker_details", [])
+
+    for s in stocks:
+        s["broker_details"] = by_name.get(s.get("name", ""), [])
+    return stocks
+
+
 def build_analyst_briefing(brokerage_reports: dict, api_key: str) -> dict:
     from .ai_analyzer import _try_parse_json
 
@@ -238,6 +256,7 @@ def build_analyst_briefing(brokerage_reports: dict, api_key: str) -> dict:
 
     result.setdefault("sector_themes", [])
     result["stocks"] = _backfill_opinion_target(result.get("stocks", []), all_reports)
+    result["stocks"] = _backfill_broker_details(result.get("stocks", []), all_reports)
     return result
 
 
