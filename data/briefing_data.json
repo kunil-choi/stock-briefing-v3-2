@@ -1,26 +1,34 @@
 {
-  "briefing_date": "2026년 08월 17일",
-  "generated_at": "07:54",
-  "length_tier": "shorts",
+  "briefing_date": "2026년 08월 18일",
+  "generated_at": "07:52",
+  "length_tier": "mid",
   "step1_recap": {
     "market_leaders": [
-      "삼성전자",
-      "SK하이닉스"
+      "유진투자증권",
+      "삼성전자"
     ],
     "stocks": [
-      "현대차",
-      "삼성전기",
-      "삼성SDI",
-      "두산에너빌리티",
-      "LG전자",
-      "LG이노텍",
-      "로보티즈",
-      "NH투자증권"
+      "SK하이닉스",
+      "예스24",
+      "삼성증권",
+      "키움증권",
+      "삼성바이오로직스",
+      "셀트리온",
+      "E8"
     ],
-    "market_summary_gist": "전일(8월 16일) 기준 코스피는 외국인 5거래일 연속 순매수 흐름 속에 반등세를 이어갔다. 삼성전자·SK하이닉스 등 반도체 투톱에 외국인 매수세가 집중되며 지수를 견인했고, 현대차(+8.24%), LG이노텍(+6.34%), 삼성SDI(+5.95%) 등 주요 대형주도 동반 상승했다. 투자자예탁금은 전전일(8월 15일) 기준 100조 원을 재돌파하며 증시 대기자금이 회복세를 보이고 있다.",
+    "market_summary_gist": "전일(8월 17일) 국내외 증시는 복합적인 변수 속에서 변동성 장세를 이어갔다. 코스피는 최근 9,300선에서 5,200선까지 폭락한 이후 반등을 시도하는 국면으로, 외국인 수급 개선과 반도체 주도주 강세가 반등의 핵심 동력으로 부각됐다. SK하이닉스는 전일 종가 기준 3.26% 상승하며 반도체 섹터 회복을 견인했다. 미국 30년 만기 국채 수익률이 5.3%를 돌파해 19년 만에 최고 수준을 기록하는 등 글로벌 금리 불안은 지속됐다.",
     "generated_at": ""
   },
   "morning_reaction": [
+    {
+      "name": "유진투자증권",
+      "code": "001200",
+      "bucket": "market_leaders",
+      "step1_price": 4510,
+      "step1_change_pct": 3.2,
+      "morning_price": 4510,
+      "morning_change_pct": 0.0
+    },
     {
       "name": "삼성전자",
       "code": "005930",
@@ -28,135 +36,495 @@
       "step1_price": 274500,
       "step1_change_pct": 2.43,
       "morning_price": 274500,
-      "morning_change_pct": 2.43
+      "morning_change_pct": 0.0
     },
     {
       "name": "SK하이닉스",
       "code": "000660",
-      "bucket": "market_leaders",
+      "bucket": "stocks",
       "step1_price": 1645000,
       "step1_change_pct": 3.26,
       "morning_price": 1645000,
-      "morning_change_pct": 3.26
+      "morning_change_pct": 0.0
     },
     {
-      "name": "현대차",
-      "code": "005380",
+      "name": "예스24",
+      "code": "053280",
       "bucket": "stocks",
-      "step1_price": 453000,
-      "step1_change_pct": 8.24,
-      "morning_price": 453000,
-      "morning_change_pct": 8.24
+      "step1_price": 3260,
+      "step1_change_pct": 1.4,
+      "morning_price": 3260,
+      "morning_change_pct": 0.0
     },
     {
-      "name": "삼성전기",
-      "code": "009150",
+      "name": "삼성증권",
+      "code": "016360",
       "bucket": "stocks",
-      "step1_price": 1558000,
-      "step1_change_pct": 3.66,
-      "morning_price": 1558000,
-      "morning_change_pct": 3.66
+      "step1_price": 93000,
+      "step1_change_pct": 0.54,
+      "morning_price": 93000,
+      "morning_change_pct": 0.0
     },
     {
-      "name": "삼성SDI",
-      "code": "006400",
+      "name": "키움증권",
+      "code": "039490",
       "bucket": "stocks",
-      "step1_price": 516000,
-      "step1_change_pct": 5.95,
-      "morning_price": 516000,
-      "morning_change_pct": 5.95
+      "step1_price": 300500,
+      "step1_change_pct": 1.18,
+      "morning_price": 300500,
+      "morning_change_pct": 0.0
     },
     {
-      "name": "두산에너빌리티",
-      "code": "034020",
+      "name": "삼성바이오로직스",
+      "code": "207940",
       "bucket": "stocks",
-      "step1_price": 82600,
-      "step1_change_pct": 2.1,
-      "morning_price": 82600,
-      "morning_change_pct": 2.1
+      "step1_price": 1548000,
+      "step1_change_pct": -1.02,
+      "morning_price": 1548000,
+      "morning_change_pct": 0.0
     },
     {
-      "name": "LG전자",
-      "code": "066570",
+      "name": "셀트리온",
+      "code": "068270",
       "bucket": "stocks",
-      "step1_price": 215000,
-      "step1_change_pct": 4.12,
-      "morning_price": 215000,
-      "morning_change_pct": 4.12
+      "step1_price": 201000,
+      "step1_change_pct": -0.5,
+      "morning_price": 201000,
+      "morning_change_pct": 0.0
     },
     {
-      "name": "LG이노텍",
-      "code": "011070",
+      "name": "E8",
+      "code": "418620",
       "bucket": "stocks",
-      "step1_price": 654000,
-      "step1_change_pct": 6.34,
-      "morning_price": 654000,
-      "morning_change_pct": 6.34
-    },
-    {
-      "name": "로보티즈",
-      "code": "108490",
-      "bucket": "stocks",
-      "step1_price": 280000,
-      "step1_change_pct": 7.28,
-      "morning_price": 280000,
-      "morning_change_pct": 7.28
-    },
-    {
-      "name": "NH투자증권",
-      "code": "005940",
-      "bucket": "stocks",
-      "step1_price": 28750,
-      "step1_change_pct": 1.41,
-      "morning_price": 28750,
-      "morning_change_pct": 1.41
+      "step1_price": 580,
+      "step1_change_pct": 5.26,
+      "morning_price": 580,
+      "morning_change_pct": 0.0
     }
   ],
   "analyst_briefing": {
-    "sector_themes": [],
-    "stocks": []
+    "sector_themes": [
+      {
+        "sector": "식품·라면 수출",
+        "report_count": 2,
+        "narrative": "농심과 삼양식품 모두 2분기 해외 매출이 두 자릿수 이상 급성장하며 K-라면 글로벌 확장세가 뚜렷하다. 미국·중국·일본 등 주요 시장에서 동반 성장이 확인되며 섹터 전반에 긍정적 시각이 집중됐다."
+      },
+      {
+        "sector": "게임",
+        "report_count": 2,
+        "narrative": "시프트업과 컴투스에 대해 키움증권이 목표주가를 동시 상향하며 게임 섹터 내 선별적 모멘텀에 주목했다. 멀티 IP 전략과 레드오션 내 틈새 기회가 각각 핵심 투자 논거로 제시됐다."
+      },
+      {
+        "sector": "보험",
+        "report_count": 2,
+        "narrative": "현대해상과 코리안리 모두 2분기 호실적을 기록했으나, 성장의 지속성에 대한 평가는 엇갈렸다. 손익 개선의 구조적 여부가 보험 섹터 투자의 핵심 판단 기준으로 부각됐다."
+      }
+    ],
+    "stocks": [
+      {
+        "name": "LS에코에너지",
+        "category": "single_significant",
+        "brokers": [
+          "iM증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "iM증권이 LS에코에너지에 대해 탈중국화 공급망 재편의 수혜주로 주목하는 리포트를 발간했습니다. 트럼프 2.0 시대를 맞아 희토류를 비롯한 핵심광물 공급망 재편이 가속화되는 가운데, LS에코에너지의 희토류 금속 사업이 직접적인 수혜를 받을 것으로 분석됩니다. 글로벌 공급망 다변화 흐름 속에서 중국 외 공급원 확보 수요가 커지고 있어 동사의 사업 포지셔닝이 부각되는 시점입니다. 탈중국화라는 구조적 테마와 맞물린 성장 스토리를 점검하기에 적합한 리포트로, 핵심광물 관련 투자자라면 주목할 만합니다.",
+        "broker_details": [
+          {
+            "broker": "iM증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "휴메딕스",
+        "category": "single_significant",
+        "brokers": [
+          "iM증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "iM증권은 휴메딕스가 2분기 매출액 504억 원(+17.3% YoY), 영업이익 117억 원(+8.2% YoY)을 기록하며 사상 최대 실적을 달성했다고 분석했습니다. 리투오(Rituaux) 제품 라인의 성장과 필러 부문의 회복세가 실적 개선을 이끈 핵심 동력으로 꼽힙니다. 외형 성장과 수익성이 동시에 개선되며 실적의 질도 양호하다는 평가입니다. 뷰티·의료기기 업황 회복 국면에서 휴메딕스의 제품 포트폴리오가 시장 수요를 잘 반영하고 있음을 확인시켜주는 결과입니다.",
+        "broker_details": [
+          {
+            "broker": "iM증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "티엘비",
+        "category": "single_significant",
+        "brokers": [
+          "키움증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "키움증권은 티엘비에 대해 SOCAMM 수요 증가에 따른 수주잔고 급증으로 공급자 우위 업황이 지속되고 있다고 분석했습니다. 리포트 제목 '공급자 우위 업황은 수주잔고로 갈음합니다'에서 알 수 있듯, 수주잔고 자체가 업황 강도를 가늠하는 핵심 지표로 제시됐습니다. AI 서버 확산과 맞물린 고성능 메모리 모듈 수요가 티엘비의 수주 증가를 견인하고 있는 것으로 보입니다. 공급이 수요를 따라가지 못하는 업황에서 티엘비의 수혜가 지속될 수 있을지 수주잔고 추이를 지속적으로 모니터링할 필요가 있습니다.",
+        "broker_details": [
+          {
+            "broker": "키움증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "현대해상",
+        "category": "single_significant",
+        "brokers": [
+          "iM증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "iM증권은 현대해상의 2026년 2분기 순이익이 3,918억 원으로 전년 동기 대비 무려 58.2% 급증했다고 밝혔습니다. 장기보험과 자동차보험 부문 손익 개선이 이번 호실적을 주도한 것으로 분석됩니다. 리포트 제목 '미운 오리새끼는 백조가 될 수 있는가'에서 드러나듯, 그간 상대적으로 저평가됐던 현대해상의 재평가 가능성을 타진하는 시각이 담겨 있습니다. 손익 개선의 구조적 지속성 여부가 향후 주가 방향을 가를 핵심 변수로, 이익의 질과 지속성에 대한 추가 확인이 필요합니다.",
+        "broker_details": [
+          {
+            "broker": "iM증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "코리안리",
+        "category": "single_significant",
+        "brokers": [
+          "iM증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "iM증권은 코리안리의 2분기 실적이 호조를 보였으나, 이를 구조적 성장으로 평가하기는 어렵다고 신중한 시각을 제시했습니다. 실적 개선의 주요 원인이 투자이익 급증과 일시적 요인에 기인한 것으로 분석되기 때문입니다. 재보험 업황이 견조하더라도 반복 가능한 이익 창출력이 확인되지 않으면 밸류에이션 프리미엄을 받기 어렵다는 점이 핵심 논거입니다. 호실적에도 불구하고 질적 성장에 대한 의문이 제기된 만큼, 투자자는 다음 분기 이익의 질 변화를 주의 깊게 살펴볼 필요가 있습니다.",
+        "broker_details": [
+          {
+            "broker": "iM증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "농심",
+        "category": "single_significant",
+        "brokers": [
+          "키움증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "키움증권은 농심의 2분기 해외 매출이 전년 동기 대비 31% 성장했으며, 미국·중국·일본 모두 두 자릿수 증가세를 기록했다고 분석했습니다. '辛 브랜드의 확장'이라는 리포트 제목처럼, 신라면을 필두로 한 K-라면 브랜드 파워가 글로벌 시장에서 강하게 확인되고 있습니다. 특정 지역에 편중되지 않고 주요 3개국에서 고른 성장을 기록했다는 점이 성장의 안정성 측면에서 긍정적으로 평가됩니다. 글로벌 식품 소비 트렌드와 농심 해외 채널 확장의 시너지가 지속될 경우 중장기 실적 상향 여력이 충분하다는 시각입니다.",
+        "broker_details": [
+          {
+            "broker": "키움증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "삼양식품",
+        "category": "single_significant",
+        "brokers": [
+          "키움증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "키움증권에 따르면 삼양식품의 2분기 매출은 1,762억 원으로 시장 기대치에 부합했으며, 해외 매출이 전년 동기 대비 47%라는 압도적 성장률을 기록했습니다. '예상대로 순항 중'이라는 리포트 제목이 시사하듯, 불닭 브랜드 중심의 해외 수요가 컨센서스 범위 내에서 꾸준히 실현되고 있다는 점이 긍정적입니다. 농심(+31%)과 비교해도 삼양식품의 해외 성장률이 두드러지며, 글로벌 K-푸드 열풍의 핵심 수혜주로서의 위치를 재확인했습니다. 성장 모멘텀이 예측 가능한 범위에서 이어지고 있어 실적 안정성에 대한 시장 신뢰가 높아지고 있는 국면입니다.",
+        "broker_details": [
+          {
+            "broker": "키움증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "시프트업",
+        "category": "single_significant",
+        "brokers": [
+          "키움증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "키움증권이 시프트업에 대해 목표주가를 6만 5,000원으로 상향하며 오늘의 주목 픽으로 눈길을 끌고 있습니다. 2029년 예상 실적 기준 PER 12.5배 적용으로, 현재 주가 대비 약 10%의 상승 여력이 있다고 분석됐습니다. '멀티 IP 기반 레벨업'이라는 리포트 제목처럼, 단일 IP 의존에서 벗어나 복수의 IP로 수익 기반을 다각화하는 전략이 밸류에이션 재평가의 핵심 근거로 제시됐습니다. 목표주가 상향이라는 명확한 투자 시그널이 나온 만큼, 게임 섹터 내 성장주를 탐색하는 투자자라면 주목해야 할 종목입니다.",
+        "broker_details": [
+          {
+            "broker": "키움증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "컴투스",
+        "category": "single_significant",
+        "brokers": [
+          "키움증권"
+        ],
+        "opinion": "BUY",
+        "target_price": "47000",
+        "analysis": "키움증권은 컴투스에 대해 투자의견을 BUY로 변경하고 목표주가를 기존 4만 원에서 4만 7,000원으로 상향 조정했습니다. '레드오션 내 기회 요인'이라는 제목처럼, 치열한 경쟁 환경 속에서도 컴투스만의 차별화된 기회 요소가 있다는 점을 핵심 논거로 삼았습니다. 투자의견 변경과 목표주가 동반 상향은 시장에 보내는 강한 긍정 시그널로, 시프트업과 함께 키움증권이 게임 섹터 내 선별적 매수를 권고한 종목입니다. 목표주가 상향폭(17.5%)과 투자의견 상향이 함께 나온 만큼 단기 모멘텀 측면에서 주목할 만한 오늘의 픽으로 소개합니다.",
+        "broker_details": [
+          {
+            "broker": "키움증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "SFA",
+        "category": "single_significant",
+        "brokers": [
+          "한국IR협의회"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "한국IR협의회는 SFA가 AI 자율제조 로보틱스 기반의 완전 무인화 시스템을 선도하는 기업으로 주목했습니다. 2026년 매출 1조 7,550억 원, 영업이익 1,357억 원이 전망되며, AI와 로보틱스가 결합된 자율제조 분야에서 뚜렷한 기술 경쟁력을 보유한 것으로 평가됩니다. 완전 무인화라는 산업 자동화의 최종 단계를 선도한다는 포지셔닝은 중장기 성장 스토리로서 설득력이 높습니다. AI·로봇 제조 자동화 테마에 관심 있는 투자자라면, 매출 1조 원대의 실질적 사업 규모를 갖춘 SFA를 포트폴리오 관점에서 검토해볼 만합니다.",
+        "broker_details": [
+          {
+            "broker": "한국IR협의회",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      }
+    ]
   },
-  "ai_strategy_update": "오늘 아침 제시한 전략을 그대로 유지합니다. 장중 특별한 리포트 이슈는 확인되지 않았습니다.",
+  "ai_strategy_update": "오늘 아침 제시한 전략에 더해, 탈중국화 공급망 재편 흐름에서 LS에코에너지가 희토류 등 핵심광물 수혜주로 새롭게 부각되며 아침에 언급한 구리 공급망 관련 소재주 관심 대상군이 한층 구체화됐다. 티엘비는 SOCAMM 수요 급증으로 수주잔고가 늘며 공급자 우위 업황이 확인돼 AI 인프라 관련 수혜주 범주를 보강하는 근거가 추가됐다. 바이오 섹터 로테이션 후보와 관련해서는 휴메딕스가 2분기 매출과 영업이익 모두 두 자릿수 성장으로 실적 가시성을 입증했고, 농심과 삼양식품은 해외 매출이 각각 31%, 47% 증가하며 내수 방어주보다 글로벌 소비재 성격의 음식료 종목이 단기 대안으로 부상할 수 있음을 시사한다. 보험 섹터에서는 현대해상이 장기·자동차보험 손익 개선으로 순이익이 58% 급증한 반면 코리안리는 호실적이 일시적 요인에 기인해 구조적 성장으로 보기 어렵다는 평가가 나와 같은 업종 내에서도 종목 선별이 중요함을 확인시켜줬다. SFA는 AI 자율제조 로보틱스 기반 완전 무인화 시스템으로 2026년 매출 1조 7,550억 원이 전망돼 아침에 언급한 AI 인프라 관련 수혜주 범위를 제조 자동화 영역까지 넓혀볼 필요가 생겼다.",
   "brokerage_reports": {
     "simultaneous": [],
     "new_coverage": [],
-    "single_significant": []
+    "single_significant": [
+      {
+        "stock_name": "LS에코에너지",
+        "brokers": [
+          "iM증권"
+        ],
+        "title": "탈중국화 공급망 수혜 ⇒ 희토류 금속사업 성..",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "트럼프 2.0 시대 탈중국화 공급망 재편으로 희토류 등 핵심광물 수혜가 기대된다.",
+        "date": "26.08.18",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "iM증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "휴메딕스",
+        "brokers": [
+          "iM증권"
+        ],
+        "title": "리투오 성장 및 필러 회복으로 사상 최대 실..",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "2분기 매출액 504억(+17.3% YoY), 영업이익 117억(+8.2% YoY)으로 호실적을 달성했다.",
+        "date": "26.08.18",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "iM증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "티엘비",
+        "brokers": [
+          "키움증권"
+        ],
+        "title": "공급자 우위 업황은 수주잔고로 갈음합니다",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "SOCAMM 수요 증가로 수주잔고가 급증하며 공급자 우위 업황이 지속되고 있다.",
+        "date": "26.08.18",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "키움증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "현대해상",
+        "brokers": [
+          "iM증권"
+        ],
+        "title": "미운 오리새끼는 백조가 될 수 있는가",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "현대해상 2Q26 순이익은 3,918억원(+58.2% YoY)으로 장기·자동차보험 손익 개선이 주도했다.",
+        "date": "26.08.18",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "iM증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "코리안리",
+        "brokers": [
+          "iM증권"
+        ],
+        "title": "호실적이나 구조적 성장이라고 보기는 어려움",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "코리안리 2Q26 실적은 호조였으나, 투자이익 급증과 일시적 요인에 기인해 구조적 성장으로 보기 어렵다.",
+        "date": "26.08.18",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "iM증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "농심",
+        "brokers": [
+          "키움증권"
+        ],
+        "title": "辛 브랜드의 확장",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "농심 2분기 해외 매출 YoY +31% 성장, 미국·중국·일본 모두 두 자릿수 증가세를 기록했다.",
+        "date": "26.08.18",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "키움증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "삼양식품",
+        "brokers": [
+          "키움증권"
+        ],
+        "title": "예상대로 순항 중",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "삼양식품 2분기 매출은 1,762억원으로 시장 기대치에 부합하며 해외 매출이 YoY +47% 성장했다.",
+        "date": "26.08.18",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "키움증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "시프트업",
+        "brokers": [
+          "키움증권"
+        ],
+        "title": "멀티 IP 기반 레벨업",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "목표주가 6.5만원으로 상향하며, 29E 기준 PER 12.5배로 현재 대비 10% 상승 여력이 있다.",
+        "date": "26.08.18",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "키움증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "컴투스",
+        "brokers": [
+          "키움증권"
+        ],
+        "title": "레드오션 내 기회 요인",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "목표주가를 4만원에서 4.7만원으로 상향하고 투자의견을 BUY로 변경하였다.",
+        "date": "26.08.18",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "키움증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "SFA",
+        "brokers": [
+          "한국IR협의회"
+        ],
+        "title": "완전 무인화를 선도하는 AI 자율제조 로보틱..",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "SFA는 AI 자율제조 로보틱스 기반 완전 무인화 시스템을 선도하며, 2026년 매출 1조 7,550억 원, 영업이익 1,357억 원이 전망된다.",
+        "date": "26.08.18",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "한국IR협의회",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      }
+    ]
   },
   "market_data": {
     "kospi": {
-      "value": 6977.93994140625,
+      "value": 6977.94,
       "change_pct": 2.42,
       "direction": "up",
       "is_premarket": true
     },
     "kosdaq": {
-      "value": 864.6500244140625,
+      "value": 864.65,
       "change_pct": 0.38,
       "direction": "up",
       "is_premarket": true
     },
     "nasdaq": {
-      "value": 26729.16015625,
-      "change_pct": -0.28,
+      "value": 26644.91015625,
+      "change_pct": -0.32,
       "direction": "down",
       "is_premarket": false
     },
     "sp500": {
-      "value": 7785.759765625,
-      "change_pct": -0.17,
+      "value": 7745.06005859375,
+      "change_pct": -0.52,
       "direction": "down",
       "is_premarket": false
     },
     "dow": {
-      "value": 53732.41015625,
-      "change_pct": -0.2,
+      "value": 53459.78125,
+      "change_pct": -0.51,
       "direction": "down",
       "is_premarket": false
     },
     "usd_krw": {
-      "value": 1416.8499755859375,
-      "change_pct": 0.03,
-      "direction": "up",
+      "value": 1416.1300048828125,
+      "change_pct": -0.05,
+      "direction": "down",
       "is_premarket": false
     }
   }
