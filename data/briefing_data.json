@@ -1,242 +1,169 @@
 {
-  "briefing_date": "2026년 08월 20일",
-  "generated_at": "08:51",
+  "briefing_date": "2026년 08월 21일",
+  "generated_at": "07:58",
   "length_tier": "mid",
   "step1_recap": {
     "market_leaders": [
-      "삼성전자",
-      "SK하이닉스"
+      "SK하이닉스",
+      "삼성전자"
     ],
     "stocks": [
-      "현대차",
-      "한화에어로스페이스",
+      "알테오젠",
+      "에스티팜",
+      "SK증권",
       "삼성SDI",
-      "삼성전기",
-      "SK이노베이션",
+      "HPSP",
+      "한미반도체",
+      "아이티센글로벌",
       "SK스퀘어"
     ],
-    "market_summary_gist": "전전일(8/18) 국내 증시는 코스피 6,869.83(-1.55%), 코스닥 834.20(-3.52%)로 동반 급락 마감했다. 미국 장기 국채금리가 30년물 기준 19년 만의 최고치를 기록하는 등 글로벌 채권 쇼크가 위험 자산 전반을 압박했고, 외국인의 반도체 대형주 중심 매도세가 낙폭을 키웠다. 원/달러 환율은 전일(8/19) 미 연준의 금리 동결 기대와 수출업체 달러 매도 물량 집중으로 1,386.81원(-1.97%)까지 하락하며 1,300원대를 회복했다.",
+    "market_summary_gist": "전일(8/20) 마감 기준 코스피는 6,471.17(-5.80%), 코스닥은 824.46(-1.17%)로 국내 증시가 큰 폭의 하락세를 기록했다. 같은 날 새벽 마감된 미국 증시도 나스닥 26,067.17(-1.00%), S&P500 7,641.16(-0.87%), 다우존스 52,759.21(-1.32%)로 일제히 하락했다. 원·달러 환율은 1,393.22원(-1.44%)으로 전일 대비 원화 강세가 뚜렷하게 나타났으며, 7월 초 1,559.2원 고점 대비 약 10% 이상 하락하면서 달러 고점 매수자들의 환차손 우려가 커졌다.",
     "generated_at": ""
   },
   "morning_reaction": [
     {
-      "name": "삼성전자",
-      "code": "005930",
-      "bucket": "market_leaders",
-      "step1_price": 247500,
-      "step1_change_pct": -7.82,
-      "morning_price": 247500,
-      "morning_change_pct": 0.0
-    },
-    {
       "name": "SK하이닉스",
       "code": "000660",
       "bucket": "market_leaders",
-      "step1_price": 1500000,
-      "step1_change_pct": -9.75,
-      "morning_price": 1500000,
+      "step1_price": 1691000,
+      "step1_change_pct": 12.73,
+      "morning_price": 1691000,
       "morning_change_pct": 0.0
     },
     {
-      "name": "현대차",
-      "code": "005380",
-      "bucket": "stocks",
-      "step1_price": 414000,
-      "step1_change_pct": -4.83,
-      "morning_price": 414000,
+      "name": "삼성전자",
+      "code": "005930",
+      "bucket": "market_leaders",
+      "step1_price": 271000,
+      "step1_change_pct": 9.49,
+      "morning_price": 271000,
       "morning_change_pct": 0.0
     },
     {
-      "name": "한화에어로스페이스",
-      "code": "012450",
+      "name": "알테오젠",
+      "code": "196170",
       "bucket": "stocks",
-      "step1_price": 1177000,
-      "step1_change_pct": 2.71,
-      "morning_price": 1177000,
+      "step1_price": 339500,
+      "step1_change_pct": 11.86,
+      "morning_price": 339500,
+      "morning_change_pct": 0.0
+    },
+    {
+      "name": "에스티팜",
+      "code": "237690",
+      "bucket": "stocks",
+      "step1_price": 110900,
+      "step1_change_pct": 11.68,
+      "morning_price": 110900,
+      "morning_change_pct": 0.0
+    },
+    {
+      "name": "SK증권",
+      "code": "001510",
+      "bucket": "stocks",
+      "step1_price": 2810,
+      "step1_change_pct": 29.79,
+      "morning_price": 2810,
       "morning_change_pct": 0.0
     },
     {
       "name": "삼성SDI",
       "code": "006400",
       "bucket": "stocks",
-      "step1_price": 487000,
-      "step1_change_pct": -0.2,
-      "morning_price": 487000,
+      "step1_price": 499500,
+      "step1_change_pct": 2.57,
+      "morning_price": 499500,
       "morning_change_pct": 0.0
     },
     {
-      "name": "삼성전기",
-      "code": "009150",
+      "name": "HPSP",
+      "code": "403870",
       "bucket": "stocks",
-      "step1_price": 1387000,
-      "step1_change_pct": -3.68,
-      "morning_price": 1387000,
+      "step1_price": 48000,
+      "step1_change_pct": 5.03,
+      "morning_price": 48000,
       "morning_change_pct": 0.0
     },
     {
-      "name": "SK이노베이션",
-      "code": "096770",
+      "name": "한미반도체",
+      "code": "042700",
       "bucket": "stocks",
-      "step1_price": 128900,
-      "step1_change_pct": -1.98,
-      "morning_price": 128900,
+      "step1_price": 225500,
+      "step1_change_pct": 2.04,
+      "morning_price": 225500,
+      "morning_change_pct": 0.0
+    },
+    {
+      "name": "아이티센글로벌",
+      "code": "124500",
+      "bucket": "stocks",
+      "step1_price": 31350,
+      "step1_change_pct": 22.7,
+      "morning_price": 31350,
       "morning_change_pct": 0.0
     },
     {
       "name": "SK스퀘어",
       "code": "402340",
       "bucket": "stocks",
-      "step1_price": 1004000,
-      "step1_change_pct": -11.54,
-      "morning_price": 1004000,
+      "step1_price": 1123000,
+      "step1_change_pct": 11.85,
+      "morning_price": 1123000,
       "morning_change_pct": 0.0
     }
   ],
   "analyst_briefing": {
     "sector_themes": [
       {
-        "sector": "전력·전선 인프라",
+        "sector": "반도체·장비·소재",
         "report_count": 5,
-        "narrative": "LS에 대해 대신·키움·미래에셋·한화·신한 등 5개 증권사가 동시에 리포트를 발간하며 AI 데이터센터 수혜와 주요 사업부 실적 개선을 집중 조명했습니다. 비에이치아이도 HRSG·BOP 사업 성장성이 부각되며 관련 섹터 전반에 관심이 집중되고 있습니다."
+        "narrative": "SK하이닉스, 신성이엔지, 인텍플러스, 에이디테크놀로지, 원익머트리얼즈 등 반도체 관련 종목에 리포트가 집중되며, 반도체 CAPEX 확대 사이클과 함께 장비·소재·인프라 업체들의 수주 및 실적 회복 기대감이 부각되고 있습니다."
       },
       {
-        "sector": "보험·금융",
-        "report_count": 5,
-        "narrative": "현대해상에 대해 대신·교보·하나·신한·iM 등 5개 증권사가 목표주가를 48,000원에서 59,000원으로 22.9% 상향하며 '놀라운 변화'를 일제히 강조했습니다."
+        "sector": "AI 인프라·데이터센터",
+        "report_count": 2,
+        "narrative": "NAVER의 200MW 규모 AI 데이터센터 건설 계획과 NHN KCP의 AI 결제 인프라 전환 전략이 주목받으며, AI 인프라 투자 확대 흐름이 IT 플랫폼 전반으로 확산되는 양상입니다."
       },
       {
-        "sector": "의류·패션 OEM",
-        "report_count": 4,
-        "narrative": "한세실업과 영원무역에 대해 대신증권·한화투자증권이 동시에 리포트를 발간하며, 2분기 서프라이즈 실적과 하반기 호실적 전망, 매력적인 밸류에이션을 공통적으로 부각했습니다."
-      },
-      {
-        "sector": "AI·데이터센터 연관주",
-        "report_count": 4,
-        "narrative": "이수페타시스(MLB 기판), NAVER(AI 데이터센터 구축), LS(AI DC 수혜 전선) 등 AI 인프라 관련 종목에 리포트가 집중되며 AI 수요 확대가 실적으로 가시화되고 있음을 여러 증권사가 확인하고 있습니다."
+        "sector": "주주환원·밸류업",
+        "report_count": 2,
+        "narrative": "SK하이닉스의 40조원 자사주 매입·소각 발표와 세아홀딩스의 주주환원 강화 전략이 동시에 부각되며, 주주환원을 핵심 투자 포인트로 삼는 종목들이 시장의 관심을 끌고 있습니다."
       }
     ],
     "stocks": [
       {
-        "name": "LS",
+        "name": "SK하이닉스",
         "category": "simultaneous",
         "brokers": [
-          "대신증권",
-          "키움증권",
-          "미래에셋증권",
           "한화투자증권",
-          "신한투자증권"
+          "하나증권"
         ],
         "opinion": "",
-        "target_price": "630000",
-        "analysis": "오늘 가장 주목해야 할 종목입니다. 대신·키움·미래에셋·한화·신한 등 무려 5개 증권사가 동시에 LS 리포트를 발간하며 강한 주목도를 보여주고 있습니다. 리포트 제목은 '내러티브가 실적으로 증명되기 시작!'으로, 그간 기대감으로만 평가받던 성장 스토리가 실제 실적으로 확인되기 시작했다는 점이 핵심입니다. ELECTRIC, 전선, LS이링크 등 주요 사업부의 실적 개선과 AI 데이터센터 수혜가 동시에 부각되고 있으며, 목표주가는 630,000원으로 상향 제시되었습니다. 5개 증권사가 동시에 긍정적 시각을 공유했다는 점에서 시장 컨센서스가 빠르게 형성되고 있는 국면으로 해석됩니다.",
+        "target_price": "",
+        "analysis": "오늘 한화투자증권과 하나증권이 동시에 SK하이닉스에 대한 리포트를 발간하며 강한 관심을 나타냈습니다. 핵심 이슈는 40조원 규모의 자사주 매입 및 소각 발표로, 2025년부터 2027년까지 잉여현금흐름(FCF)의 50% 이상을 주주환원에 활용하겠다는 계획입니다. 두 증권사 모두 이번 주주환원 정책을 단순한 일회성 이벤트가 아닌 중장기 주주가치 제고의 신호탄으로 평가하고 있습니다. 복수의 대형 증권사가 동시에 주목하는 만큼, 시장 내 SK하이닉스의 밸류에이션 재평가 논의가 한층 탄력을 받을 것으로 보입니다.",
         "broker_details": [
-          {
-            "broker": "대신증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "키움증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "미래에셋증권",
-            "opinion": "",
-            "target_price": ""
-          },
           {
             "broker": "한화투자증권",
             "opinion": "",
             "target_price": ""
           },
           {
-            "broker": "신한투자증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "name": "현대해상",
-        "category": "simultaneous",
-        "brokers": [
-          "대신증권",
-          "교보증권",
-          "하나증권",
-          "신한투자증권",
-          "iM증권"
-        ],
-        "opinion": "Buy",
-        "target_price": "59000",
-        "analysis": "현대해상도 5개 증권사가 동시에 커버한 오늘의 핵심 종목입니다. 대신·교보·하나·신한·iM증권 모두 리포트를 발간하며 '놀라운 변화!'라는 강렬한 제목 아래 투자의견 Buy를 유지했습니다. 목표주가는 기존 48,000원에서 59,000원으로 22.9%나 상향됐는데, 이 폭이 매우 인상적입니다. 보험 섹터에서 이 정도의 동시 관심과 목표주가 상향 폭은 이례적인 수준으로, 실적 또는 펀더멘털 변화가 상당히 긍정적으로 평가받고 있음을 시사합니다.",
-        "broker_details": [
-          {
-            "broker": "대신증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "교보증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
             "broker": "하나증권",
             "opinion": "",
             "target_price": ""
-          },
-          {
-            "broker": "신한투자증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "iM증권",
-            "opinion": "",
-            "target_price": ""
           }
         ]
       },
       {
-        "name": "이수페타시스",
-        "category": "simultaneous",
+        "name": "신성이엔지",
+        "category": "new_coverage",
         "brokers": [
-          "하나증권",
-          "키움증권"
-        ],
-        "opinion": "",
-        "target_price": "",
-        "analysis": "하나증권과 키움증권이 동시에 이수페타시스를 분석하며 'Capa 확대, 판가 인상과 믹스 개선의 콜라보'라는 제목으로 실적 성장 동력을 짚었습니다. AI 서버향 MLB(다층기판) 수요 확대와 VIPPO 생산능력 확장이 맞물리며 매출과 영업이익 모두 큰 폭으로 성장한 점이 핵심입니다. 단순한 수요 증가뿐 아니라 판가 인상과 제품 믹스 개선이 동시에 진행되고 있다는 점에서 수익성 레버리지 효과도 기대해볼 수 있습니다.",
-        "broker_details": [
-          {
-            "broker": "하나증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "키움증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "name": "실리콘투",
-        "category": "simultaneous",
-        "brokers": [
-          "한화투자증권",
           "유안타증권"
         ],
         "opinion": "",
         "target_price": "",
-        "analysis": "한화투자증권과 유안타증권이 동시에 실리콘투에 대한 코멘트를 발간했습니다. CVC캐피탈로부터 3,000억원 규모의 유상증자를 통해 전략적 투자자를 유치한 것이 핵심 이슈입니다. 글로벌 K-뷰티 유통 네트워크를 확장하기 위한 재원을 확보했다는 점에서 중장기 성장 모멘텀으로 평가할 수 있으나, 유상증자에 따른 주식 희석 효과도 함께 체크해야 할 사항입니다. 두 증권사가 동시에 코멘트를 낸 만큼 시장의 관심이 집중되고 있는 구간입니다.",
+        "analysis": "유안타증권이 NDR(비딜로드쇼) 후기 형식으로 신성이엔지의 하반기 실적개선 기대 요인을 점검했습니다. 클린룸 수주잔고 증가와 반도체 고객사들의 CAPEX 확대가 실적 회복의 핵심 동력으로 꼽혔습니다. 여기에 에너지솔루션 사업 다각화가 추가적인 성장 축으로 부상하고 있어, 반도체 인프라 수혜주로서의 포지셔닝이 강화되는 국면입니다. 반도체 투자 사이클 확대와 맞물려 하반기 실적 가시성이 높아지고 있다는 점에서 관심을 가져볼 만한 종목입니다.",
         "broker_details": [
-          {
-            "broker": "한화투자증권",
-            "opinion": "",
-            "target_price": ""
-          },
           {
             "broker": "유안타증권",
             "opinion": "",
@@ -245,133 +172,17 @@
         ]
       },
       {
-        "name": "CJ",
-        "category": "simultaneous",
+        "name": "NHN KCP",
+        "category": "new_coverage",
         "brokers": [
-          "미래에셋증권",
-          "한화투자증권",
-          "DS투자증권",
-          "하나증권"
-        ],
-        "opinion": "",
-        "target_price": "166000",
-        "analysis": "미래에셋·한화·DS투자·하나증권 4개 증권사가 CJ에 대해 동시에 리포트를 발간했습니다. '가치의 무게중심, 올리브영으로 한 걸음 더'라는 제목처럼 CJ의 핵심 가치가 올리브영으로 집중되고 있다는 시각이 공통적입니다. 목표주가는 166,000원으로 상향되었으며, 올리브영의 기업 가치 상승이 지주사 CJ의 NAV 재평가로 이어지고 있는 흐름입니다. K-뷰티 글로벌 확장과 올리브영의 실적 성장이 지속되는 한 CJ 리레이팅 스토리도 유효하다는 것이 4개 증권사의 공통된 시각입니다.",
-        "broker_details": [
-          {
-            "broker": "미래에셋증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "한화투자증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "DS투자증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "하나증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "name": "인텔리안테크",
-        "category": "simultaneous",
-        "brokers": [
-          "iM증권",
-          "신한투자증권",
-          "유진투자증권"
+          "신한투자증권"
         ],
         "opinion": "",
         "target_price": "",
-        "analysis": "iM증권·신한투자증권·유진투자증권 3개 증권사가 인텔리안테크를 동시에 분석했습니다. 2Q26 매출이 972억원으로 전년 대비 30% 성장했다는 점이 가장 눈에 띄는 수치입니다. '해상·지상용 안테나 모두 견조한 성장세'라는 제목처럼 특정 분야에 편중되지 않고 양쪽 사업 모두 균형 있게 성장하고 있다는 점이 실적의 질을 높이는 요인으로 평가됩니다. 위성통신 수요 확대 구조 속에서 견조한 성장세가 이어지고 있음을 3개 증권사가 동시에 확인한 것입니다.",
-        "broker_details": [
-          {
-            "broker": "iM증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "신한투자증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "유진투자증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "name": "한세실업",
-        "category": "simultaneous",
-        "brokers": [
-          "대신증권",
-          "한화투자증권"
-        ],
-        "opinion": "BUY",
-        "target_price": "12000",
-        "analysis": "대신증권과 한화투자증권이 한세실업에 대해 동시에 리포트를 발간하며 '2분기 예상 밖 서프라이즈'라는 제목으로 호실적을 강조했습니다. 두 증권사 모두 BUY 의견과 목표주가 12,000원을 유지했습니다. 시장 기대치를 상회하는 2분기 실적이 확인된 만큼 하반기 실적 가시성도 함께 높아질 수 있다는 점에 주목할 필요가 있습니다. OEM 의류 섹터에서 영원무역과 함께 동반 주목받고 있다는 점도 섹터 전반의 투자 심리 개선을 시사합니다.",
-        "broker_details": [
-          {
-            "broker": "대신증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "한화투자증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "name": "영원무역",
-        "category": "simultaneous",
-        "brokers": [
-          "대신증권",
-          "한화투자증권"
-        ],
-        "opinion": "",
-        "target_price": "",
-        "analysis": "대신증권과 한화투자증권이 영원무역에 대해서도 동시에 리포트를 발간했습니다. '하반기 호실적, 매력적인 밸류에이션, 높은 배당'이라는 제목이 투자 포인트를 고스란히 담고 있습니다. 12개월 선행 P/E가 5배 수준에 불과해 밸류에이션 매력이 상당히 높고, 배당성향도 30%로 확대되어 주주환원 측면에서도 긍정적입니다. 실적 모멘텀과 저평가, 배당이라는 세 가지 요소가 동시에 부각되고 있어 중장기 관점의 투자자에게 관심 종목으로 손꼽힙니다.",
-        "broker_details": [
-          {
-            "broker": "대신증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "한화투자증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "name": "비에이치아이",
-        "category": "simultaneous",
-        "brokers": [
-          "신한투자증권",
-          "IBK투자증권"
-        ],
-        "opinion": "",
-        "target_price": "",
-        "analysis": "신한투자증권과 IBK투자증권이 비에이치아이를 동시에 분석하며 '성장 가시성에 수익성까지'라는 제목으로 긍정적 시각을 공유했습니다. HRSG(열회수증기발생기) 수주 확대와 BOP(발전소 보조기기) 사업 성장이 동시에 수익성 개선을 이끌 것으로 기대된다는 점이 핵심입니다. 단순히 외형 성장에 그치지 않고 수익성까지 개선될 것이라는 점에서 실적 레버리지 효과가 기대되는 종목으로 평가받고 있습니다.",
+        "analysis": "신한투자증권이 NHN KCP의 NDR 후기를 통해 단순 PG(결제대행) 사업자를 넘어 AI 결제 인프라 기업으로의 전환 전략을 조명했습니다. PG 부문의 안정적 성장을 기반으로 AI 결제 인프라라는 신사업 영역을 확장하면서 수익성 개선이 기대된다는 평가입니다. 기존 결제 플랫폼 역량 위에 AI를 접목한 신사업 확대는 중장기 밸류에이션 재평가 요인이 될 수 있습니다. 핀테크와 AI 인프라의 교차점에 위치한 종목으로, 성장 스토리 전환이 본격화되는지 여부를 주시할 필요가 있습니다.",
         "broker_details": [
           {
             "broker": "신한투자증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "IBK투자증권",
             "opinion": "",
             "target_price": ""
           }
@@ -385,7 +196,7 @@
         ],
         "opinion": "",
         "target_price": "",
-        "analysis": "하나증권이 NDR(기업설명회) 후기 형식으로 NAVER의 AI 데이터센터 전략을 분석했습니다. 코어위브·네비우스·브룩필드 등 글로벌 AI 인프라 플레이어들과의 협력 관계에서 얻은 인사이트를 담은 리포트로, NAVER가 브룩필드로부터 자금을 조달해 1단계 200MW 규모의 AI 데이터센터를 구축할 예정이라는 점이 핵심 내용입니다. AI 인프라 직접 투자를 통해 단순 플랫폼 기업을 넘어 AI 인프라 사업자로의 전환을 꾀하고 있다는 점에서 중장기 밸류에이션 재평가 가능성을 열어두는 내용으로 해석됩니다.",
+        "analysis": "하나증권이 NAVER의 NDR을 통해 코어위브, 네비우스, 브룩필드 등 글로벌 파트너사들과의 협력 내용을 상세히 소개했습니다. 특히 브룩필드로부터 자금을 조달해 1단계 200MW 규모의 AI 데이터센터를 건설한다는 계획이 구체적인 성장 모멘텀으로 부각됩니다. 글로벌 AI 인프라 파트너십을 통한 대규모 데이터센터 투자는 NAVER의 AI 전환 전략이 실질적인 실행 단계에 진입했음을 시사합니다. 국내 빅테크 중 AI 인프라 투자 규모와 속도 면에서 두드러지는 행보로, 중장기 성장 내러티브가 강화되는 시점으로 평가됩니다.",
         "broker_details": [
           {
             "broker": "하나증권",
@@ -402,7 +213,92 @@
         ],
         "opinion": "",
         "target_price": "",
-        "analysis": "신한투자증권이 씨어스에 대해 NDR 후기 형식의 리포트를 발간하며 '멀리 가기 위한 재정비의 시간'이라는 제목으로 중장기 투자 관점을 제시했습니다. 현재는 재정비 구간이지만 3분기 실적 회복이 예상된다는 점이 단기 모멘텀으로 주목됩니다. 12개월 선행 PER 기준 14.8배 수준에서 저평가 매력이 있다는 점도 투자가치 탐색 측면에서 유효한 포인트입니다. 신한투자증권은 현 구간을 저점 탐색의 기회로 보며 투자가치 점검을 권고하는 어조를 유지하고 있습니다.",
+        "analysis": "신한투자증권이 씨어스에 대한 NDR 후기를 발간하며 '멀리 가기 위한 재정비의 시간'이라는 표현으로 현재의 일시적 조정 국면을 설명했습니다. 3분기 실적 회복이 예상되고 있으며, 12개월 선행 PER 기준 14.8배 수준으로 동종 업체 대비 저평가 매력이 존재한다는 분석입니다. 단기 실적 눈높이보다는 중장기 회복 사이클에 초점을 맞춘 접근이 유효하다는 시각으로, 저평가 구간에서의 투자가치 탐색이 의미 있는 시점으로 판단됩니다. 3분기 실적 발표가 주가의 방향을 결정짓는 중요한 분기점이 될 전망입니다.",
+        "broker_details": [
+          {
+            "broker": "신한투자증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "인텍플러스",
+        "category": "single_significant",
+        "brokers": [
+          "유안타증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "오늘의 픽으로 주목할 종목은 인텍플러스입니다. 유안타증권은 리포트 제목을 '실적보다 수주!'로 달 만큼 현재 수주 모멘텀을 최우선 투자 포인트로 강조했습니다. 수주잔고가 빠른 속도로 증가하면서 2026년 하반기 실적에 대한 가시성이 높아지고 있다는 점이 핵심 논거입니다. 단기 실적보다 수주 증가라는 선행 지표에 집중할 것을 권고하고 있어, 반도체 장비 사이클 수혜를 선제적으로 반영하는 투자 아이디어로 읽힙니다.",
+        "broker_details": [
+          {
+            "broker": "유안타증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "SK",
+        "category": "single_significant",
+        "brokers": [
+          "유안타증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "유안타증권이 'SK, 아직 시작도 안했다'는 강한 제목으로 SK 지주사에 대한 리포트를 발간했습니다. 2Q26 실적은 매출 42.1조원, 영업이익 4.8조원으로, 반도체 호황이 SK하이닉스 실적을 끌어올렸고 SK이노베이션의 실적 개선도 지주사 이익 기여에 보탬이 됐다는 분석입니다. 제목이 암시하듯 현재의 실적 개선이 본격적인 상승 사이클의 초입에 불과하다는 시각으로, 중장기 업사이드를 강조하는 뉘앙스가 담겨 있습니다. 핵심 자회사들의 동반 실적 회복이 지주사 디스카운트 해소의 촉매가 될 수 있는지 주목할 필요가 있습니다.",
+        "broker_details": [
+          {
+            "broker": "유안타증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "에이디테크놀로지",
+        "category": "single_significant",
+        "brokers": [
+          "신한투자증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "신한투자증권이 에이디테크놀로지의 2Q26 실적을 점검하며 '높아진 기대, 가이던스 유지'라는 평가를 내렸습니다. 2Q26 매출은 459억원으로 전년 동기 대비 35.0% 증가했으나, 분기 가이던스 627억원 대비로는 약 26.8% 하회하는 수준이었습니다. 다만 연간 가이던스는 유지되었다는 점에서 단기 실적 미스보다 연간 성장 궤도의 유효성에 무게를 둬야 한다는 시각입니다. 높아진 시장 기대치를 충족시키는 것이 과제로 남아 있으나, 연간 가이던스를 지켜낸 점은 하반기 실적 회복에 대한 자신감으로 해석할 수 있습니다.",
+        "broker_details": [
+          {
+            "broker": "신한투자증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "세아홀딩스",
+        "category": "single_significant",
+        "brokers": [
+          "신한투자증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "신한투자증권이 세아홀딩스를 '실적 성장주이자 주주환원에 진심인 기업'으로 소개하는 리포트를 발간했습니다. 2025년 실적 성장세가 이어지는 동시에 주주환원 정책이 강화되고 있다는 점이 투자 매력 포인트로 제시됐습니다. 실적 성장과 주주환원이라는 두 가지 요소가 동시에 부각되는 종목은 현재 밸류업 장세에서 특히 주목받을 수 있는 조합입니다. 상대적으로 덜 알려진 지주사 계열이지만, 이번 리포트를 계기로 시장의 발굴 수요가 높아질 가능성이 있습니다.",
+        "broker_details": [
+          {
+            "broker": "신한투자증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "name": "원익머트리얼즈",
+        "category": "single_significant",
+        "brokers": [
+          "신한투자증권"
+        ],
+        "opinion": "",
+        "target_price": "",
+        "analysis": "신한투자증권이 원익머트리얼즈에 대해 '하반기 수익성 회복 여력이 충분하다'는 긍정적 시각을 제시했습니다. 반도체 특수가스 소재 업체로서 반도체 고객사의 가동률 회복과 CAPEX 확대 흐름의 직접적인 수혜를 받을 수 있는 구조입니다. 특히 2027년 실적 정상화까지의 중장기 회복 경로가 뚜렷하게 그려지고 있다는 점이 중요한 투자 포인트로 꼽혔습니다. 반도체 소재 섹터 내에서 하반기 실적 회복 가시성이 높은 종목으로, 중장기 관점의 접근이 유효하다는 평가입니다.",
         "broker_details": [
           {
             "broker": "신한투자증권",
@@ -413,278 +309,24 @@
       }
     ]
   },
-  "ai_strategy_update": "오늘 아침 제시한 전략에 더해, 신규 리포트들을 통해 AI 인프라 수혜 범위가 반도체 대형주를 넘어 더욱 넓어졌음이 확인됐다. 이수페타시스는 AI 서버향 MLB 수요 확대와 VIPPO Capa 확장으로 실적이 큰 폭 성장했고, LS는 ELECTRIC·전선·이링크 등 주요 사업부의 실적 개선과 AI 데이터센터 수혜가 확인되며 목표주가가 630,000원으로 상향됐으며, NAVER는 브룩필드로부터 자금을 조달해 1단계 200MW 규모의 AI 데이터센터 구축을 추진하는 등 AI 인프라 테마의 저변이 PCB·전력·플랫폼으로 확산되고 있다. 아침에 주목했던 피지컬AI·반도체 중심 테마에 이들 AI 인프라 연관주를 병행 관찰할 필요성이 높아졌다. 한편 영원무역은 12개월 선행 PER 5배와 30%로 확대된 배당성향, 하반기 호실적 기대로 밸류에이션 매력이 부각됐고, 현대해상은 목표주가가 48,000원에서 59,000원으로 22.9% 상향되며 아침 전략에서 주의를 당부했던 금융 섹터 내에서도 보험주는 차별적으로 접근할 여지가 생겼다.",
+  "ai_strategy_update": "오늘 아침 제시한 전략에 더해, SK하이닉스 자사주 매입·소각 모멘텀이 2025~2027년 FCF의 50% 이상 주주환원 계획으로 구체화되면서 반도체 소부장 수혜 논리가 한층 강화됐다. 특히 신성이엔지의 클린룸 수주잔고 증가와 인텍플러스의 빠른 수주잔고 확대는 반도체 CAPEX 확대 사이클이 실제 수주로 연결되고 있음을 확인시켜 주며, 아침에 언급한 반도체 소부장 로테이션 논거를 뒷받침한다. NAVER가 브룩필드 자금을 활용해 200MW 규모 AI 데이터센터 1단계 건설에 나선다는 소식은 글로벌 AI 인프라 투자 심리 회복과 맞물려 아침의 엔비디아·앤스로픽 관련 AI 투자 심리 회복 포인트를 국내에서도 재확인시켜 준다. 원익머트리얼즈는 하반기 수익성 회복 여력과 2027년 실적 정상화 기대가 제시돼 반도체 소재 영역으로 관심 종목군을 일부 확장할 근거가 생겼다. 에이디테크놀로지는 2분기 매출이 가이던스를 하회했으나 연간 가이던스가 유지된 만큼, 아침에 강조한 개별 모멘텀 종목 선별 시 실적 달성률 점검을 리스크 관리 기준으로 추가 반영할 필요가 있다.",
   "brokerage_reports": {
     "simultaneous": [
       {
-        "stock_name": "이수페타시스",
-        "brokers": [
-          "하나증권",
-          "키움증권"
-        ],
-        "title": "Capa 확대, 판가 인상과 믹스 개선의 콜라보",
-        "opinion": "",
-        "target_price": "",
-        "ai_summary": "AI 서버향 MLB 수요 확대와 VIPPO Capa 확장으로 매출·영업이익이 큰 폭으로 성장했다.",
-        "date": "26.08.19",
-        "report_day": "yesterday",
-        "broker_details": [
-          {
-            "broker": "하나증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "키움증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "stock_name": "실리콘투",
+        "stock_name": "SK하이닉스",
         "brokers": [
           "한화투자증권",
-          "유안타증권"
-        ],
-        "title": "3천억원 유상증자 코멘트",
-        "opinion": "",
-        "target_price": "",
-        "ai_summary": "실리콘투가 CVC캐피탈의 3,000억원 규모 유상증자를 통해 글로벌 뷰티 유통 네트워크 확장을 위한 전략적 투자자를 유치했습니다.",
-        "date": "26.08.19",
-        "report_day": "yesterday",
-        "broker_details": [
-          {
-            "broker": "한화투자증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "유안타증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "stock_name": "LS",
-        "brokers": [
-          "대신증권",
-          "키움증권",
-          "미래에셋증권",
-          "한화투자증권",
-          "신한투자증권"
-        ],
-        "title": "내러티브가 실적으로 증명되기 시작!",
-        "opinion": "",
-        "target_price": "",
-        "ai_summary": "LS 목표주가 630,000원으로 상향하며, ELECTRIC·전선·LS이링크 등 주요 사업부의 실적 개선과 AI 데이터센터 수혜가 확인되고 있다.",
-        "date": "26.08.19",
-        "report_day": "yesterday",
-        "broker_details": [
-          {
-            "broker": "대신증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "키움증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "미래에셋증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "한화투자증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "신한투자증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "stock_name": "현대해상",
-        "brokers": [
-          "대신증권",
-          "교보증권",
-          "하나증권",
-          "신한투자증권",
-          "iM증권"
-        ],
-        "title": "놀라운 변화!",
-        "opinion": "",
-        "target_price": "",
-        "ai_summary": "목표주가를 48,000원에서 59,000원으로 22.9% 상향하며 투자의견 Buy를 유지한다.",
-        "date": "26.08.19",
-        "report_day": "yesterday",
-        "broker_details": [
-          {
-            "broker": "대신증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "교보증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "하나증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "신한투자증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "iM증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "stock_name": "한세실업",
-        "brokers": [
-          "대신증권",
-          "한화투자증권"
-        ],
-        "title": "2분기 예상 밖 서프라이즈",
-        "opinion": "",
-        "target_price": "",
-        "ai_summary": "한세실업에 대해 BUY 의견과 목표주가 12,000원을 유지한다.",
-        "date": "26.08.19",
-        "report_day": "yesterday",
-        "broker_details": [
-          {
-            "broker": "대신증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "한화투자증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "stock_name": "영원무역",
-        "brokers": [
-          "대신증권",
-          "한화투자증권"
-        ],
-        "title": "하반기 호실적, 매력적인 valuation, 높은 배..",
-        "opinion": "",
-        "target_price": "",
-        "ai_summary": "영원무역은 하반기 호실적과 매력적인 밸류에이션(12개월 FWD P/E 5배), 30%로 확대된 배당성향으로 투자 매력이 높다.",
-        "date": "26.08.19",
-        "report_day": "yesterday",
-        "broker_details": [
-          {
-            "broker": "대신증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "한화투자증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "stock_name": "인텔리안테크",
-        "brokers": [
-          "iM증권",
-          "신한투자증권",
-          "유진투자증권"
-        ],
-        "title": "해상·지상용 안테나 모두 견조한 성장세",
-        "opinion": "",
-        "target_price": "",
-        "ai_summary": "인텔리안테크의 2Q26 매출은 972억원으로 전년비 30% 성장하며, 지상·해상용 안테나 모두 견조한 성장세를 보였다.",
-        "date": "26.08.19",
-        "report_day": "yesterday",
-        "broker_details": [
-          {
-            "broker": "iM증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "신한투자증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "유진투자증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "stock_name": "비에이치아이",
-        "brokers": [
-          "신한투자증권",
-          "IBK투자증권"
-        ],
-        "title": "성장 가시성에 수익성까지",
-        "opinion": "",
-        "target_price": "",
-        "ai_summary": "HRSG 수주 확대와 BOP 사업 성장으로 수익성 개선이 기대된다.",
-        "date": "26.08.19",
-        "report_day": "yesterday",
-        "broker_details": [
-          {
-            "broker": "신한투자증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "IBK투자증권",
-            "opinion": "",
-            "target_price": ""
-          }
-        ]
-      },
-      {
-        "stock_name": "CJ",
-        "brokers": [
-          "미래에셋증권",
-          "한화투자증권",
-          "DS투자증권",
           "하나증권"
         ],
-        "title": "가치의 무게중심, 올리브영으로 한 걸음 더",
+        "title": "40조원은 시작, 대규모 자사주 매입 및 소각 ..",
         "opinion": "",
         "target_price": "",
-        "ai_summary": "CJ 목표주가를 166,000원으로 상향하며 올리브영 가치 상승을 반영했다.",
-        "date": "26.08.19",
+        "ai_summary": "SK하이닉스가 40조원 규모 자사주 매입 및 소각을 발표하며 2025~2027년 FCF의 50% 이상을 주주환원할 계획이다.",
+        "date": "26.08.20",
         "report_day": "yesterday",
         "broker_details": [
           {
-            "broker": "미래에셋증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
             "broker": "한화투자증권",
-            "opinion": "",
-            "target_price": ""
-          },
-          {
-            "broker": "DS투자증권",
             "opinion": "",
             "target_price": ""
           },
@@ -698,6 +340,44 @@
     ],
     "new_coverage": [
       {
+        "stock_name": "신성이엔지",
+        "brokers": [
+          "유안타증권"
+        ],
+        "title": "[NDR 후기] 하반기 실적개선 기대 요인",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "클린룸 수주잔고 증가, 반도체 CAPEX 확대, 에너지솔루션 다각화로 하반기 실적개선이 기대된다.",
+        "date": "26.08.21",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "유안타증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "NHN KCP",
+        "brokers": [
+          "신한투자증권"
+        ],
+        "title": "NDR 후기: PG를 넘어 AI 결제 인프라로",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "PG 성장과 AI 결제 인프라 전환으로 수익성 개선 및 신사업 확대가 기대된다.",
+        "date": "26.08.21",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "신한투자증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
         "stock_name": "NAVER",
         "brokers": [
           "하나증권"
@@ -705,9 +385,9 @@
         "title": "NDR, 코어위브, 네비우스, 브룩필드에서 얻은..",
         "opinion": "",
         "target_price": "",
-        "ai_summary": "NAVER는 브룩필드로부터 자금을 조달해 1단계 200MW 규모의 AI 데이터센터를 구축할 예정이다.",
+        "ai_summary": "NAVER는 브룩필드로부터 자금을 조달해 1단계 200MW 규모의 AI 데이터센터를 건설할 계획이다.",
         "date": "26.08.20",
-        "report_day": "today",
+        "report_day": "yesterday",
         "broker_details": [
           {
             "broker": "하나증권",
@@ -724,9 +404,9 @@
         "title": "NDR 후기: 멀리 가기 위한 재정비의 시간",
         "opinion": "",
         "target_price": "",
-        "ai_summary": "3분기 실적 회복이 예상되며, 12MF PER 14.8배 수준에서 저평가 매력이 있어 투자가치 탐색이 유효하다.",
+        "ai_summary": "3분기 실적 회복이 예상되며, 12MF PER 14.8배로 저평가 매력이 있어 투자가치 탐색이 유효하다.",
         "date": "26.08.20",
-        "report_day": "today",
+        "report_day": "yesterday",
         "broker_details": [
           {
             "broker": "신한투자증권",
@@ -736,42 +416,138 @@
         ]
       }
     ],
-    "single_significant": []
+    "single_significant": [
+      {
+        "stock_name": "인텍플러스",
+        "brokers": [
+          "유안타증권"
+        ],
+        "title": "실적보다 수주!",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "수주잔고가 빠르게 증가하며 2H26 실적 가시성이 높아지고 있다.",
+        "date": "26.08.21",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "유안타증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "SK",
+        "brokers": [
+          "유안타증권"
+        ],
+        "title": "아직 시작도 안했다",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "SK의 2Q26 실적은 매출 42.1조원, 영업이익 4.8조원으로 반도체 호황과 SK이노베이션 실적 개선이 주도했다.",
+        "date": "26.08.21",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "유안타증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "에이디테크놀로지",
+        "brokers": [
+          "신한투자증권"
+        ],
+        "title": "높아진 기대, 가이던스 유지",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "2Q26 매출 459억(+35.0% YoY)으로 가이던스 627억 대비 26.8% 하회했으나 연간 가이던스는 유지됐다.",
+        "date": "26.08.21",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "신한투자증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "세아홀딩스",
+        "brokers": [
+          "신한투자증권"
+        ],
+        "title": "나도 실적 성장주, 나도 주주환원에 진심!",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "2025년 실적 성장과 주주환원 강화로 투자 매력이 높아지고 있다.",
+        "date": "26.08.21",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "신한투자증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      },
+      {
+        "stock_name": "원익머트리얼즈",
+        "brokers": [
+          "신한투자증권"
+        ],
+        "title": "하반기 수익성 회복 여력 충분",
+        "opinion": "",
+        "target_price": "",
+        "ai_summary": "하반기 수익성 회복 여력이 충분하며 2027년 실적 정상화가 기대됩니다.",
+        "date": "26.08.21",
+        "report_day": "today",
+        "broker_details": [
+          {
+            "broker": "신한투자증권",
+            "opinion": "",
+            "target_price": ""
+          }
+        ]
+      }
+    ]
   },
   "market_data": {
     "kospi": {
-      "value": 6471.17,
-      "change_pct": -5.8,
-      "direction": "down",
+      "value": 6852.58,
+      "change_pct": 5.89,
+      "direction": "up",
       "is_premarket": true
     },
     "kosdaq": {
-      "value": 824.46,
-      "change_pct": -1.17,
-      "direction": "down",
+      "value": 840.89,
+      "change_pct": 1.99,
+      "direction": "up",
       "is_premarket": true
     },
     "nasdaq": {
-      "value": 26331.08984375,
-      "change_pct": 0.16,
-      "direction": "up",
+      "value": 26067.166015625,
+      "change_pct": -1.0,
+      "direction": "down",
       "is_premarket": false
     },
     "sp500": {
-      "value": 7707.97998046875,
-      "change_pct": 0.21,
-      "direction": "up",
+      "value": 7641.16015625,
+      "change_pct": -0.87,
+      "direction": "down",
       "is_premarket": false
     },
     "dow": {
-      "value": 53463.05078125,
-      "change_pct": 0.22,
-      "direction": "up",
+      "value": 52759.2109375,
+      "change_pct": -1.32,
+      "direction": "down",
       "is_premarket": false
     },
     "usd_krw": {
-      "value": 1389.1700439453125,
-      "change_pct": -1.73,
+      "value": 1394.2099609375,
+      "change_pct": -1.37,
       "direction": "down",
       "is_premarket": false
     }
